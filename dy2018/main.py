@@ -45,6 +45,10 @@ class Category(object):
 
 
 def get_movie_detail():
+    """
+
+    :return: movieInfo
+    """
     movie_detail_url = base_url + "/i/98256.html"
     response = requests.get(movie_detail_url, headers={
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36",
@@ -92,11 +96,13 @@ def get_movie_detail():
     print(movie.actor_list)
     movie.brief = re_utils.re_get_brief(div_zoom_text)
     print(movie.brief)
-    movie.behind_to_make = re.search(r'<p>◎幕后制作　(.*?)</p>', div_zoom_text).group(1)
+    movie.behind_to_make = re_utils.re_get_behind(div_zoom_text)
     print(movie.behind_to_make)
-    movie.film_picture_url = re.search(r'<p>◎影片截图　(.*?)</p>', div_zoom_text).group(1)
+    movie.film_picture_url = re_utils.re_get_film_picture_url(div_zoom_text)
     print(movie.film_picture_url)
-
+    movie.xunlei_url_list = re_utils.re_get_xunlei_url(div_zoom_text)
+    print(movie.xunlei_url_list)
+    return movie
 
 def get_movie_detail_url():
     """

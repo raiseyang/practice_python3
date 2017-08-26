@@ -1,5 +1,7 @@
 import re
 
+from bs4 import BeautifulSoup
+
 
 def re_get_actor(html):
     """
@@ -61,3 +63,11 @@ def re_get_behind(html):
 def re_get_film_picture_url(html):
     search = re.search(r'<p>◎影片截图</p>\n<div>(?P<image>.*?)</div>', html).group('image')
     return re.search(r'src=\"(?P<url>.*?)\"', search).group('url')
+
+
+def re_get_xunlei_url(html):
+    soup = BeautifulSoup(html, 'lxml')
+    xl_urls = []
+    for tag_table in soup.find_all(title="迅雷专用高速下载"):
+        xl_urls.append(tag_table['gwnwpkcw'])
+    return xl_urls
