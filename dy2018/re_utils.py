@@ -32,7 +32,7 @@ def re_get_brief(html):
         s = ''
         if match:
             s = match.group(1)
-        print(s)
+        # print(s)
         if s and not s.startswith('◎'):
             brief = brief + s + '\n'
     return brief
@@ -44,7 +44,10 @@ def re_get_behind(html):
     :param html:
     :return:
     """
-    match = re.search(r'<p>◎幕后制作(.*)</p>\n(<p>　　(.*)</p>\n)*', html).group(0)
+    try:
+        match = re.search(r'<p>◎幕后制作(.*)</p>\n(<p>　　(.*)</p>\n)*', html).group(0)
+    except BaseException:
+        return ''
     line_list = match.split("\n")
     # print(line_list)
     brief = ''
@@ -61,13 +64,17 @@ def re_get_behind(html):
 
 
 def re_get_film_picture_url(html):
-    search = re.search(r'<p>◎影片截图</p>\n<div>(?P<image>.*?)</div>', html).group('image')
+    try:
+        search = re.search(r'<p>◎影片截图</p>\n<(div|p)>(?P<image>.*?)</(div|p)>', html).group('image')
+    except BaseException:
+        return ''
     return re.search(r'src=\"(?P<url>.*?)\"', search).group('url')
 
 
 def re_get_xunlei_url(html):
+    # return re.findall('thunder://\w+?=?', html)
     soup = BeautifulSoup(html, 'lxml')
     xl_urls = []
-    for tag_table in soup.find_all(title="迅雷专用高速下载"):
-        xl_urls.append(tag_table['gwnwpkcw'])
+    for tag_a in soup.find_all('a'):
+        xl_urls.append(tag_a.text)
     return xl_urls

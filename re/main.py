@@ -75,11 +75,15 @@ html = """
 </div>
 """
 
-soup = BeautifulSoup(html,'lxml')
-xl_urls = []
-for tag_table in soup.find_all(title="迅雷专用高速下载"):
-    xl_urls.append(tag_table['gwnwpkcw'])
-print(xl_urls)
+match  = re.findall('thunder://\w+',html)
+print(match)
+
+
+# soup = BeautifulSoup(html,'lxml')
+# xl_urls = []
+# for tag_table in soup.find_all(title="迅雷专用高速下载"):
+#     xl_urls.append(tag_table['gwnwpkcw'])
+# print(xl_urls)
 # search = re.search(r'<p>◎影片截图</p>\n<div>(?P<image>.*?)</div>', html).group('image')
 # ma = re.search(r'src=\"(?P<url>.*?)\"', search).group('url')
 # print(str(ma))

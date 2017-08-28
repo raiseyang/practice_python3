@@ -49,7 +49,7 @@ def get_movie_detail():
 
     :return: movieInfo
     """
-    movie_detail_url = base_url + "/i/98256.html"
+    movie_detail_url = base_url + "/i/98157.html"
     response = requests.get(movie_detail_url, headers={
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36",
         "Cookie": """thunder_union_stat_xx_ss=td_pid_49eb1d8c-0e7e-b645-33a2-adc17d224069; PHPSESSID=gutigh2macq0mnctc1l66v1fv5; bdshare_firstime=1450272832133; BAIDU_SSP_lcr=https://www.baidu.com/; __cfduid=d1f5a684d3dd53f9cecea7732686956951500683138; xws=963e23220fbe6c8fcd652486b1851662; Hm_lvt_a68dc87e09b2a989eec1a0669bfd59eb=1502510768,1502807919,1502895638,1503321672; Hm_lpvt_a68dc87e09b2a989eec1a0669bfd59eb=1503713051"""
@@ -63,34 +63,34 @@ def get_movie_detail():
     movie.title_all = soup.find("h1").text
     print(movie.title_all)
     div_zoom = soup.find(id='Zoom')
-    div_zoom_text = div_zoom.get_text
+    div_zoom_text = str(div_zoom.get_text)
     # print(type(div_zoom))
     # print(div_zoom.get_text)
     movie.poster_url = div_zoom.find('img')['src']
     print(movie.poster_url)
-    movie.other_name = re.search(r'<p>◎译　　名　(.*?)</p>', div_zoom_text).group(1)
+    movie.other_name = group1(re.search(r'<p>◎译　　名　(.*?)</p>', div_zoom_text))
     print(movie.other_name)
-    movie.source_name = re.search(r'<p>◎片　　名　(.*?)</p>', div_zoom_text).group(1)
+    movie.source_name = group1(re.search(r'<p>◎片　　名　(.*?)</p>', div_zoom_text))
     print(movie.source_name)
-    movie.year = re.search(r'<p>◎年　　代　(.*?)</p>', div_zoom_text).group(1)
+    movie.year = group1(re.search(r'<p>◎年　　代　(.*?)</p>', div_zoom_text))
     print(movie.year)
-    movie.area = re.search(r'<p>◎产　　地　(.*?)</p>', div_zoom_text).group(1)
+    movie.area = group1(re.search(r'<p>◎产　　地　(.*?)</p>', div_zoom_text))
     print(movie.area)
-    movie.category_list = re.search(r'<p>◎类　　别　(.*?)</p>', div_zoom_text).group(1)
+    movie.category_list = group1(re.search(r'<p>◎类　　别　(.*?)</p>', div_zoom_text))
     print(movie.category_list)
-    movie.language_list = re.search(r'<p>◎语　　言　(.*?)</p>', div_zoom_text).group(1)
+    movie.language_list = group1(re.search(r'<p>◎语　　言　(.*?)</p>', div_zoom_text))
     print(movie.language_list)
-    movie.caption = re.search(r'<p>◎字　　幕　(.*?)</p>', div_zoom_text).group(1)
+    movie.caption = group1(re.search(r'<p>◎字　　幕　(.*?)</p>', div_zoom_text))
     print(movie.caption)
-    movie.douban_rating = re.search(r'<p>◎豆瓣评分　(.*?)</p>', div_zoom_text).group(1)
+    movie.douban_rating = group1(re.search(r'<p>◎豆瓣评分　(.*?)</p>', div_zoom_text))
     print(movie.douban_rating)
-    movie.measure_size = re.search(r'<p>◎视频尺寸　(.*?)</p>', div_zoom_text).group(1)
+    movie.measure_size = group1(re.search(r'<p>◎视频尺寸　(.*?)</p>', div_zoom_text))
     print(movie.measure_size)
-    movie.file_size = re.search(r'<p>◎文件大小　(.*?)</p>', div_zoom_text).group(1)
+    movie.file_size = group1(re.search(r'<p>◎文件大小　(.*?)</p>', div_zoom_text))
     print(movie.file_size)
-    movie.showing_time = re.search(r'<p>◎片　　长　(.*?)</p>', div_zoom_text).group(1)
+    movie.showing_time = group1(re.search(r'<p>◎片　　长　(.*?)</p>', div_zoom_text))
     print(movie.showing_time)
-    movie.director = re.search(r'<p>◎导　　演　(.*?)</p>', div_zoom_text).group(1)
+    movie.director = group1(re.search(r'<p>◎导　　演　(.*?)</p>', div_zoom_text))
     print(movie.director)
     movie.actor_list = re_utils.re_get_actor(div_zoom_text)
     print(movie.actor_list)
@@ -99,10 +99,15 @@ def get_movie_detail():
     movie.behind_to_make = re_utils.re_get_behind(div_zoom_text)
     print(movie.behind_to_make)
     movie.film_picture_url = re_utils.re_get_film_picture_url(div_zoom_text)
-    print(movie.film_picture_url)
+    print("film_picture_url = ",movie.film_picture_url)
     movie.xunlei_url_list = re_utils.re_get_xunlei_url(div_zoom_text)
-    print(movie.xunlei_url_list)
+    print("xunlei_url_list = ",movie.xunlei_url_list)
     return movie
+
+def group1(match):
+    if match:
+        return match.group(1)
+    return ''
 
 def get_movie_detail_url():
     """
