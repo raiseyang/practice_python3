@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0"/>
+<link rel="profile" href="http://gmpg.org/xfn/11"/>
+<link rel="pingback" href="http://www.devtf.cn/xmlrpc.php"/>
+<title>Android | 开发技术前线</title>
+<link rel='dns-prefetch' href='//www.devtf.cn'/>
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net'/>
+<link rel='dns-prefetch' href='//s.w.org'/>
+<link rel="alternate" type="application/rss+xml" title="开发技术前线 &raquo; Feed" href="http://www.devtf.cn/?feed=rss2"/>
+<link rel="alternate" type="application/rss+xml" title="开发技术前线 &raquo; 评论Feed" href="http://www.devtf.cn/?feed=comments-rss2"/>
+<link rel="alternate" type="application/rss+xml" title="开发技术前线 &raquo; Android分类目录Feed" href="http://www.devtf.cn/?feed=rss2&#038;cat=2"/>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:none!important;padding:0!important}</style><script data-pagespeed-no-defer>(function(){function d(b){var a=window;if(a.addEventListener)a.addEventListener("load",b,!1);else if(a.attachEvent)a.attachEvent("onload",b);else{var c=a.onload;a.onload=function(){b.call(this);c&&c.call(this)}}}var p=Date.now||function(){return+new Date};window.pagespeed=window.pagespeed||{};var q=window.pagespeed;function r(){this.a=!0}r.prototype.c=function(b){b=parseInt(b.substring(0,b.indexOf(" ")),10);return!isNaN(b)&&b<=p()};r.prototype.hasExpired=r.prototype.c;r.prototype.b=function(b){return b.substring(b.indexOf(" ",b.indexOf(" ")+1)+1)};r.prototype.getData=r.prototype.b;r.prototype.f=function(b){var a=document.getElementsByTagName("script"),a=a[a.length-1];a.parentNode.replaceChild(b,a)};r.prototype.replaceLastScript=r.prototype.f;
+r.prototype.g=function(b){var a=window.localStorage.getItem("pagespeed_lsc_url:"+b),c=document.createElement(a?"style":"link");a&&!this.c(a)?(c.type="text/css",c.appendChild(document.createTextNode(this.b(a)))):(c.rel="stylesheet",c.href=b,this.a=!0);this.f(c)};r.prototype.inlineCss=r.prototype.g;
+r.prototype.h=function(b,a){var c=window.localStorage.getItem("pagespeed_lsc_url:"+b+" pagespeed_lsc_hash:"+a),f=document.createElement("img");c&&!this.c(c)?f.src=this.b(c):(f.src=b,this.a=!0);for(var c=2,k=arguments.length;c<k;++c){var g=arguments[c].indexOf("=");f.setAttribute(arguments[c].substring(0,g),arguments[c].substring(g+1))}this.f(f)};r.prototype.inlineImg=r.prototype.h;
+function t(b,a,c,f){a=document.getElementsByTagName(a);for(var k=0,g=a.length;k<g;++k){var e=a[k],m=e.getAttribute("data-pagespeed-lsc-hash"),h=e.getAttribute("data-pagespeed-lsc-url");if(m&&h){h="pagespeed_lsc_url:"+h;c&&(h+=" pagespeed_lsc_hash:"+m);var l=e.getAttribute("data-pagespeed-lsc-expiry"),l=l?(new Date(l)).getTime():"",e=f(e);if(!e){var n=window.localStorage.getItem(h);n&&(e=b.b(n))}e&&(window.localStorage.setItem(h,l+" "+m+" "+e),b.a=!0)}}}
+function u(b){t(b,"img",!0,function(a){return a.src});t(b,"style",!1,function(a){return a.firstChild?a.firstChild.nodeValue:null})}
+q.i=function(){if(window.localStorage){var b=new r;q.localStorageCache=b;d(function(){u(b)});d(function(){if(b.a){for(var a=[],c=[],f=0,k=p(),g=0,e=window.localStorage.length;g<e;++g){var m=window.localStorage.key(g);if(!m.indexOf("pagespeed_lsc_url:")){var h=window.localStorage.getItem(m),l=h.indexOf(" "),n=parseInt(h.substring(0,l),10);if(!isNaN(n))if(n<=k){a.push(m);continue}else if(n<f||!f)f=n;c.push(h.substring(l+1,h.indexOf(" ",l+1)))}}k="";f&&(k="; expires="+(new Date(f)).toUTCString());document.cookie=
+"_GPSLSC="+c.join("!")+k;g=0;for(e=a.length;g<e;++g)window.localStorage.removeItem(a[g]);b.a=!1}})}};q.localStorageCacheInit=q.i;})();
+pagespeed.localStorageCacheInit();</script><link rel='stylesheet' id='styles-css' href='http://www.devtf.cn/wp-content/plugins/backuper/A.styles.css,qver=4.8.2.pagespeed.cf.8OYPNRTV3V.css' type='text/css' media='all'/><link rel='stylesheet' id='crayon-css' href='http://www.devtf.cn/wp-content/plugins/crayon-syntax-highlighter/css/min/A.crayon.min.css,qver=_2.7.2_beta.pagespeed.cf.OCIPVMp51n.css' type='text/css' media='all'/><link rel='stylesheet' id='crayon-theme-eclipse-css' href='http://www.devtf.cn/wp-content/plugins/crayon-syntax-highlighter/themes/eclipse/A.eclipse.css,qver=_2.7.2_beta.pagespeed.cf.97OZgaHS-9.css' type='text/css' media='all'/><style id='crayon-font-monaco-css' media='all' data-pagespeed-lsc-url="http://www.devtf.cn/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=_2.7.2_beta" data-pagespeed-lsc-hash="U89FDUECTj" data-pagespeed-lsc-expiry="Sun, 12 Aug 2018 16:27:22 GMT">@font-face{font-family:'MonacoRegular';src:url(wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot);src:url(wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot?#iefix) format('embedded-opentype') , url(wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.woff) format('woff') , url(wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.ttf) format('truetype') , url(wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.svg#MonacoRegular) format('svg');font-weight:normal;font-style:normal}.crayon-font-monaco *{font-family:Monaco,'MonacoRegular','Courier New',monospace!important}</style><style id='usp_style-css' media='all' data-pagespeed-lsc-url="http://www.devtf.cn/wp-content/plugins/user-submitted-posts/resources/usp.css" data-pagespeed-lsc-hash="z9gMJ_Z2YJ" data-pagespeed-lsc-expiry="Sun, 12 Aug 2018 16:27:22 GMT">div#user-submitted-posts{width:100%;max-width:800px;overflow:hidden}div#user-submitted-posts form{box-sizing:border-box;margin:10px 0;padding:5px}div#user-submitted-posts fieldset{box-sizing:border-box;margin:10px 0;padding:0;border:0}div#user-submitted-posts fieldset label{box-sizing:border-box;display:block;float:none;clear:both;width:80%;margin:0;padding:0;border:0;font-size:90%}div#user-submitted-posts fieldset input.usp-input{box-sizing:border-box;display:block;float:none;clear:both;width:80%;margin:0}div#user-submitted-posts textarea.usp-textarea{box-sizing:border-box;display:block;float:none;clear:both;width:100%;margin:0}div#user-submitted-posts select{box-sizing:border-box;display:block;float:none;clear:both;width:auto;margin:0}div#user-submitted-posts div.usp_text-editor{margin:20px 0 0 0}div#user-submitted-posts div.wp-editor-container{border:1px solid #e5e5e5}div#user-submitted-posts fieldset.usp-images{margin:25px 0}div#user-submitted-posts div#usp-upload-message{font-size:90%}div#user-submitted-posts fieldset input.usp-input.usp-clone{margin:10px 0 0 0;font-size:90%}div#user-submitted-posts a#usp_add-another{display:inline-block;clear:both;margin:10px 0 0 0;font-size:90%}div#user-submitted-posts div#usp-submit{margin:20px 0}div#user-submitted-posts div.usp-error{color:#c33}div#user-submitted-posts div#usp-error-message{margin:0 0 20px 0}div#user-submitted-posts div#usp-error-message.usp-callout-failure{color:#c33}div#user-submitted-posts div#usp-success-message{margin:0 0 20px 0;font-weight:bold}.usp-hidden,.usp-no-js{display:none}.usp-js{display:block}div#user-submitted-posts ul.parsley-errors-list{display:none;list-style-type:none}div#user-submitted-posts ul.parsley-errors-list.filled{display:block;float:none;clear:both;margin:0;padding:0;font-size:12px;line-height:18px}div#user-submitted-posts ul.parsley-errors-list.filled li.parsley-required{display:inline-block;margin:0;padding:5px 10px;color:#fff;background-color:#c33}</style><link rel='stylesheet' id='bootstrap-css' href='http://www.devtf.cn/wp-content/themes/coeur/framework/css/A.bootstrap.min.css,qver=0.1.pagespeed.cf.jfLbuhCNp4.css' type='text/css' media='screen'/><link rel='stylesheet' id='blog-css' href='http://www.devtf.cn/wp-content/themes/coeur/framework/css/A.blog.css,qver=0.1.pagespeed.cf.NfkVli18ie.css' type='text/css' media='screen'/><link rel='stylesheet' id='font_awesome_css-css' href='http://www.devtf.cn/wp-content/themes/coeur/framework/css/A.font-awesome.min.css,qver=0.1.pagespeed.cf.YaV9IcR0kC.css' type='text/css' media='screen'/><style type="text/css">.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover{color:#00c9bf}body{background-color:#f9f9f9}.site-description{color:#333}.blog-header{background-color:#fff}a,a:hover{color:#00c9bf}.btn-primary,.bypostauthor .media-heading,.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary,.woocommerce a.added_to_cart{background-color:#00c9bf}.sticky,.form-control:focus,.search-field:focus,.btn-primary,.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{border-color:#00c9bf}.woocommerce .star-rating span{color:#00c9bf}h1 a,.h1 a,h2 a,.h2 a,h3 a,.h3 a,h4 a,.h4 a,h5 a,.h5 a,h6 a,.h6 a{color:#333}h1 a,.h1 a,h2 a,.h2 a,h3 a,.h3 a,h4 a,.h4 a,h5 a,.h5 a,h6 a,.h6 a,h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-weight:200}h1 a,.h1 a,h2 a,.h2 a,h3 a,.h3 a,h4 a,.h4 a,h5 a,.h5 a,h6 a,.h6 a,h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-family:Times\ New\ Roman}body{font-family:Helvetica\ Neue}@media (min-width:1200px){.container{width:1170px}}</style><script type="text/javascript">window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.devtf.cn\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.2"}};!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);</script>
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='html5-shiv-css'  href='http://www.devtf.cn/wp-content/themes/coeur/framework/js/html5shiv.min.js?ver=4.8.2' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='respond-js-css'  href='http://www.devtf.cn/wp-content/themes/coeur/framework/js/respond.min.js?ver=4.8.2' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://www.devtf.cn/wp-includes/js/jquery/jquery.js,qver=1.12.4.pagespeed.jm.pPCPAKkkss.js'></script>
+<script type='text/javascript' src='http://www.devtf.cn/wp-includes/js/jquery/jquery-migrate.min.js,qver=1.4.1.pagespeed.jm.C2obERNcWh.js'></script>
+<script type='text/javascript'>var CrayonSyntaxSettings={"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/www.devtf.cn\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};var CrayonSyntaxStrings={"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u7528 %s \u7c98\u8d34\u3002","minimize":"\u70b9\u51fb\u5c55\u5f00\u4ee3\u7801"};</script>
+<script src="http://www.devtf.cn/wp-content/plugins/crayon-syntax-highlighter,_js,_min,_crayon.min.js,qver==_2.7.2_beta+user-submitted-posts,_resources,_jquery.cookie.js+user-submitted-posts,_resources,_jquery.parsley.min.js.pagespeed.jc.1uzeBE52-Y.js"></script><script>eval(mod_pagespeed_xWMBMXY1If);</script>
+<script>eval(mod_pagespeed_eGCOPo9GR6);</script>
+<script>eval(mod_pagespeed_LHvE3RZW07);</script>
+<script type='text/javascript'>window.ParsleyConfig={excluded:".exclude"};var usp_case_sensitivity="false";var usp_challenge_response="2";</script>
+<script src="http://www.devtf.cn/wp-content/plugins,_user-submitted-posts,_resources,_jquery.usp.core.js+themes,_coeur,_framework,_js,_coeur.js,qver==4.8.2+themes,_coeur,_framework,_js,_bootstrap.min.js,qver==4.8.2.pagespeed.jc.ADS4-KzI55.js"></script><script>eval(mod_pagespeed_58sga_Cc51);</script>
+<script>eval(mod_pagespeed_iBJ0ocafWY);</script>
+<script>eval(mod_pagespeed_1l1okTi8KE);</script>
+<script type='text/javascript' src='http://www.devtf.cn/wp-content/themes/coeur/framework/js/jquery.fitvids.min.js?ver=4.8.2'></script>
+<link rel='https://api.w.org/' href='http://www.devtf.cn/index.php?rest_route=/'/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.devtf.cn/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.devtf.cn/wp-includes/wlwmanifest.xml"/>
+<meta name="robots" content="index,follow,noodp,noydir"/>
+<link rel="canonical" href="http://www.devtf.cn/?cat=2"/>
+</head>
+<body class="archive category category-android category-2"><noscript><meta HTTP-EQUIV="refresh" content="0;url='http://www.devtf.cn/?cat=2&amp;paged=1&amp;PageSpeed=noscript'" /><style><!--table,div,span,font,p{display:none} --></style><div style="display:block">Please click <a href="http://www.devtf.cn/?cat=2&amp;paged=1&amp;PageSpeed=noscript">here</a> if you are not redirected within a few seconds.</div></noscript>
+<div id="wrap">
+<div class="blog-header" style="background-image:url('');background-size: cover;background-repeat: no-repeat;background-position: center;">
+<div class="container">
+<div class="site-meta">
+<h1 id="site-title" class="blog-title"><a href="http://www.devtf.cn">开发技术前线</a></h1>
+<p class="site-description">高质量技术文章的聚合网站</p>
+</div>
+</div>
+<nav class="navbar navbar-default" role="navigation">
+<div class="container">
+<ul id="menu-menu-1" class="nav navbar-nav"><li class="home-link menu-item menu-item-type-post_type menu-item-object-page"><a id="search_toggle" href="javascript:void(null)"><i class="fa fa-search"></i></a></li><div class="search-box"><form role="search" method="get" class="search-form" action="http://www.devtf.cn/">
+<label>
+<span class="screen-reader-text">搜索：</span>
+<input type="search" class="search-field" placeholder="搜索&hellip;" value="" name="s"/>
+</label>
+<input type="submit" class="search-submit" value="搜索"/>
+</form></div></ul>
+<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse"><ul id="menu-header" class="nav navbar-nav navbar-primary"><li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-9"><a title="首页" href="http://www.devtf.cn/">首页</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-8 active"><a title="Android" href="http://www.devtf.cn/?cat=2">Android</a></li>
+<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a title="iOS" href="http://www.devtf.cn/?cat=3">iOS</a></li>
+<li id="menu-item-251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a title="投稿" href="http://www.devtf.cn/?page_id=198">投稿</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a title="招聘信息" href="http://www.devtf.cn/?page_id=21">招聘信息</a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a title="关于" href="http://www.devtf.cn/?page_id=19">关于</a></li>
+<li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-148"><a title="RSS" href="http://www.devtf.cn/?feed=rss2">RSS</a></li>
+</ul></div>
+</div>
+</nav>
+<nav class="navbar navbar-default mobile-menu" role="navigation">
+<div class="container">
+<button class="mobile-search-icon" type="button" data-toggle="modal" data-target="#myModal">
+<i class="fa fa-search"></i>
+</button>
+<div class="mobile-toggle navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div id="mobile-navbar-collapse" class="collapse navbar-collapse"><ul id="menu-header-1" class="nav navbar-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-9"><a title="首页" href="http://www.devtf.cn/">首页</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-8 active"><a title="Android" href="http://www.devtf.cn/?cat=2">Android</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a title="iOS" href="http://www.devtf.cn/?cat=3">iOS</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a title="投稿" href="http://www.devtf.cn/?page_id=198">投稿</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a title="招聘信息" href="http://www.devtf.cn/?page_id=21">招聘信息</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a title="关于" href="http://www.devtf.cn/?page_id=19">关于</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-148"><a title="RSS" href="http://www.devtf.cn/?feed=rss2">RSS</a></li>
+</ul></div> </div>
+<div class="mobile-search"><form role="search" method="get" class="search-form" action="http://www.devtf.cn/">
+<label>
+<span class="screen-reader-text">搜索：</span>
+<input type="search" class="search-field" placeholder="搜索&hellip;" value="" name="s"/>
+</label>
+<input type="submit" class="search-submit" value="搜索"/>
+</form></div>
+</nav>
+</div>
+<div class="container">
+<div class="row">
+<main class="col-md-9 col-sm-8 col-xs-12 blog" style="float:left">
+<article class="post-1325 post type-post status-publish format-standard hentry category-android tag-android tag-29">
+<header>
+<h2 class="blog-post-title"><a href="http://www.devtf.cn/?p=1325" rel="bookmark">Mockito 中文文档 六</a></h2>	<p class="blog-post-meta"><time class="post-meta-date">Posted on <a href="http://www.devtf.cn/?m=20160627" title="Mockito 中文文档 六">2016年6月27日</a></time> </p>
+</header>
+<div class="post-content">
+<p>never()函数 public static VerificationMode never() 相当于times(0),可参见 times.. <a href="http://www.devtf.cn/?p=1325">Read More</a></p>
+</div>
+</article>
+<article class="post-1323 post type-post status-publish format-standard hentry category-android tag-android tag-29">
+<header>
+<h2 class="blog-post-title"><a href="http://www.devtf.cn/?p=1323" rel="bookmark">Mockito 中文文档 五</a></h2>	<p class="blog-post-meta"><time class="post-meta-date">Posted on <a href="http://www.devtf.cn/?m=20160627" title="Mockito 中文文档 五">2016年6月27日</a></time> </p>
+</header>
+<div class="post-content">
+<p>description函数 public static VerificationMod description(String descrip.. <a href="http://www.devtf.cn/?p=1323">Read More</a></p>
+</div>
+</article>
+<article class="post-1321 post type-post status-publish format-standard hentry category-android tag-android tag-29">
+<header>
+<h2 class="blog-post-title"><a href="http://www.devtf.cn/?p=1321" rel="bookmark">Mockito 中文文档 四</a></h2>	<p class="blog-post-meta"><time class="post-meta-date">Posted on <a href="http://www.devtf.cn/?m=20160627" title="Mockito 中文文档 四">2016年6月27日</a></time> </p>
+</header>
+<div class="post-content">
+<p>字段摘要 类型 字段以及描述 static Answer< Object > CALLS_REAL_METHODS 用于mock(Class.. <a href="http://www.devtf.cn/?p=1321">Read More</a></p>
+</div>
+</article>
+<article class="post-1319 post type-post status-publish format-standard hentry category-android tag-android tag-29">
+<header>
+<h2 class="blog-post-title"><a href="http://www.devtf.cn/?p=1319" rel="bookmark">Mockito 中文文档 三</a></h2>	<p class="blog-post-meta"><time class="post-meta-date">Posted on <a href="http://www.devtf.cn/?m=20160627" title="Mockito 中文文档 三">2016年6月27日</a></time> </p>
+</header>
+<div class="post-content">
+<p>27. 委托调用真实实例 (Since 1.9.5) 当使用常规的 spy API 去 mock 或者 spy 一个对象很困难时可以用 de.. <a href="http://www.devtf.cn/?p=1319">Read More</a></p>
+</div>
+</article>
+<article class="post-1317 post type-post status-publish format-standard hentry category-android tag-android tag-29">
+<header>
+<h2 class="blog-post-title"><a href="http://www.devtf.cn/?p=1317" rel="bookmark">Mockito 中文文档 二</a></h2>	<p class="blog-post-meta"><time class="post-meta-date">Posted on <a href="http://www.devtf.cn/?m=20160627" title="Mockito 中文文档 二">2016年6月27日</a></time> </p>
+</header>
+<div class="post-content">
+<p>16. 真实的局部mocks (1.8版本之后) 在内部通过邮件进行了无数争辩和讨论后，最终 Mockito 决定支持部分测试，早前我们不支.. <a href="http://www.devtf.cn/?p=1317">Read More</a></p>
+</div>
+</article>
+<article class="post-1315 post type-post status-publish format-standard hentry category-android tag-android tag-29">
+<header>
+<h2 class="blog-post-title"><a href="http://www.devtf.cn/?p=1315" rel="bookmark">Mockito 中文文档 一</a></h2>	<p class="blog-post-meta"><time class="post-meta-date">Posted on <a href="http://www.devtf.cn/?m=20160627" title="Mockito 中文文档 一">2016年6月27日</a></time> </p>
+</header>
+<div class="post-content">
+<p>Mockito 中文文档 ( 2.0.26 beta ) Mockito库能够Mock对象、验证结果以及打桩(stubbing)。 该文档您.. <a href="http://www.devtf.cn/?p=1315">Read More</a></p>
+</div>
+</article>
+<article class="post-1277 post type-post status-publish format-standard hentry category-android">
+<header>
+<h2 class="blog-post-title"><a href="http://www.devtf.cn/?p=1277" rel="bookmark">Google Study Jams，30天带你入门 Android 开发</a></h2>	<p class="blog-post-meta"><time class="post-meta-date">Posted on <a href="http://www.devtf.cn/?m=20160325" title="Google Study Jams，30天带你入门 Android 开发">2016年3月25日</a></time> </p>
+</header>
+<div class="post-content">
+<p>在技术的学习过程中，最重要的两个变量是环境和学习的氛围。Google Study Jams为Android开发初学者提供了良好的学习环境和氛.. <a href="http://www.devtf.cn/?p=1277">Read More</a></p>
+</div>
+</article>
+<article class="post-1268 post type-post status-publish format-standard hentry category-android tag-android tag-42">
+<header>
+<h2 class="blog-post-title"><a href="http://www.devtf.cn/?p=1268" rel="bookmark">Android下雪动画</a></h2>	<p class="blog-post-meta"><time class="post-meta-date">Posted on <a href="http://www.devtf.cn/?m=20160318" title="Android下雪动画">2016年3月18日</a></time> </p>
+</header>
+<div class="post-content">
+<p>原文链接 : Snowfall 原文作者 : Styling Android 译文出自 : hanks.xyz 译者 : hanks-zyh.. <a href="http://www.devtf.cn/?p=1268">Read More</a></p>
+</div>
+</article>
+<article class="post-1266 post type-post status-publish format-standard hentry category-android tag-android">
+<header>
+<h2 class="blog-post-title"><a href="http://www.devtf.cn/?p=1266" rel="bookmark">Android Libraries的依赖管理</a></h2>	<p class="blog-post-meta"><time class="post-meta-date">Posted on <a href="http://www.devtf.cn/?m=20160318" title="Android Libraries的依赖管理">2016年3月18日</a></time> </p>
+</header>
+<div class="post-content">
+<p>原文链接 : Dependency Management for Android Libraries 原文作者 : John Petitto.. <a href="http://www.devtf.cn/?p=1266">Read More</a></p>
+</div>
+</article>
+<article class="post-1264 post type-post status-publish format-standard hentry category-android tag-android tag-okhttp">
+<header>
+<h2 class="blog-post-title"><a href="http://www.devtf.cn/?p=1264" rel="bookmark">高效地配置OkHttp</a></h2>	<p class="blog-post-meta"><time class="post-meta-date">Posted on <a href="http://www.devtf.cn/?m=20160318" title="高效地配置OkHttp">2016年3月18日</a></time> </p>
+</header>
+<div class="post-content">
+<p>原文链接 : Effective OkHttp 原文作者 : Michael Parker 译文出自 : 开发技术前线 www.devtf&#8230; <a href="http://www.devtf.cn/?p=1264">Read More</a></p>
+</div>
+</article>
+<ul class="pagination">
+<li><span class='page-numbers current'>1</span></li><li><a class='page-numbers' href='http://www.devtf.cn/?cat=2&#038;paged=2'>2</a></li><li><a class='page-numbers' href='http://www.devtf.cn/?cat=2&#038;paged=3'>3</a></li><li><span class="page-numbers dots">&hellip;</span></li><li><a class='page-numbers' href='http://www.devtf.cn/?cat=2&#038;paged=23'>23</a></li><li><a class="next page-numbers" href="http://www.devtf.cn/?cat=2&#038;paged=2">&raquo;</a></li> </ul>
+</main>
+<aside class="sidebar col-md-3 col-sm-4 col-xs-12" style="float:right">
+<aside id="text-4" class="widget widget_text"><h3 class="widget-title">邮箱订阅</h3>	<div class="textwidget"> <form action="https://tinyletter.com/devtechfrontier" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/devtechfrontier', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:140px" name="email" id="tlemail"/></p><input type="hidden" value="1" name="embed"/><input type="submit" value="订阅!" style="width:140px;background-color:#27cbab;color:#fff"/></form></div>
+</aside><aside id="text-5" class="widget widget_text"><h3 class="widget-title">招聘信息</h3>	<div class="textwidget"><a href="https://github.com/hehonghui/the-jobs/blob/master/beijing/newsdog.md">北京明日虫洞科技有限公司招聘Android工程师</a></div>
+</aside><aside id="text-2" class="widget widget_text"><h3 class="widget-title">网站转让</h3>	<div class="textwidget"><ul class="list">
+<li>
+<a href="mailto:simplecoder.h@gmail.com" target="_blank"> <font color="#FF6666">网站转让，联系邮件 : simplecoder.h@gmail.com </font></a>
+</li>
+</ul></div>
+</aside><aside id="text-3" class="widget widget_text"><h3 class="widget-title">好书推荐</h3>	<div class="textwidget"><ul class="list">
+<li>
+<script data-pagespeed-no-defer src="http://www.devtf.cn/_,Mjo.2N4rXdSi_d.js.pagespeed.jm.-6OrT5DHgb.js"></script><img src="http://img.blog.csdn.net/20160113183528099" width="60" height="60" data-pagespeed-url-hash="3389723636" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"><a href="http://item.jd.com/11793928.html" target="_blank" class="book" style="font-size:7pt">《Android设计模式解析与实战》</a></img>
+</li>
+<li>
+<img src="http://img.blog.csdn.net/20160318210305543" width="60" height="60" data-pagespeed-url-hash="3346331617" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"><a href="http://item.jd.com/11880368.html" target="_blank" class="book">《Android开发进阶》</a></img>
+</li>
+<li>
+<img src="http://img.blog.csdn.net/20160113183752884" width="60" height="60" data-pagespeed-url-hash="4109439979" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"><a href="http://item.jd.com/1709011859.html" target="_blank" class="book">《Android开发艺术探索》</a></img>
+</li>
+<li>
+<img src="http://img.blog.csdn.net/20160113183835268" width="60" height="60" data-pagespeed-url-hash="3451865173" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"><a href="http://item.jd.com/1703654820.html" target="_blank" class="book">《Android群英传》</a></img>
+</li>
+<li>
+<img src="http://img.blog.csdn.net/20160113183956547" width="60" height="60" data-pagespeed-url-hash="3967948313" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"><a href="http://item.jd.com/11431307.html" target="_blank" class="book">《Android编程权威指南》</a></img>
+</li>
+</ul></div>
+</aside><aside id="post-views-2" class="widget widget_post-views"><h3 class="widget-title">热门文章</h3><ul>
+<li> <a href="http://www.devtf.cn/?p=323" class="dashedline">NotRxJava懒人专用指南</a> </li><li> <a href="http://www.devtf.cn/?p=405" class="dashedline">Android 如何直播RTMP流</a> </li><li> <a href="http://www.devtf.cn/?p=708" class="dashedline">Android M的App Links实...</a> </li><li> <a href="http://www.devtf.cn/?p=1117" class="dashedline">使用Systrace分析UI性能</a> </li><li> <a href="http://www.devtf.cn/?p=669" class="dashedline">Android之WebRTC介绍</a> </li><li> <a href="http://www.devtf.cn/?p=1268" class="dashedline">Android下雪动画</a> </li><li> <a href="http://www.devtf.cn/?p=598" class="dashedline">Square：从今天开始抛弃Fragme...</a> </li><li> <a href="http://www.devtf.cn/?p=1315" class="dashedline">Mockito 中文文档 一</a> </li><li> <a href="http://www.devtf.cn/?p=174" class="dashedline">那些年我们错过的响应式编程</a> </li><li> <a href="http://www.devtf.cn/?p=1325" class="dashedline">Mockito 中文文档 六</a> </li></ul>
+</aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><h3 class="widget-title">热门话题</h3><div class="tagcloud"><a href="http://www.devtf.cn/?tag=android" class="tag-cloud-link tag-link-5 tag-link-position-1" style="font-size:22pt" aria-label="android (189个项目)">android</a>
+<a href="http://www.devtf.cn/?tag=aop" class="tag-cloud-link tag-link-30 tag-link-position-2" style="font-size:8pt" aria-label="AOP (1个项目)">AOP</a>
+<a href="http://www.devtf.cn/?tag=dagger" class="tag-cloud-link tag-link-20 tag-link-position-3" style="font-size:8pt" aria-label="dagger (1个项目)">dagger</a>
+<a href="http://www.devtf.cn/?tag=espresso" class="tag-cloud-link tag-link-32 tag-link-position-4" style="font-size:8pt" aria-label="espresso (1个项目)">espresso</a>
+<a href="http://www.devtf.cn/?tag=eventbus" class="tag-cloud-link tag-link-28 tag-link-position-5" style="font-size:8pt" aria-label="EventBus (1个项目)">EventBus</a>
+<a href="http://www.devtf.cn/?tag=framework" class="tag-cloud-link tag-link-40 tag-link-position-6" style="font-size:8pt" aria-label="Framework (1个项目)">Framework</a>
+<a href="http://www.devtf.cn/?tag=gradle" class="tag-cloud-link tag-link-26 tag-link-position-7" style="font-size:8pt" aria-label="Gradle (1个项目)">Gradle</a>
+<a href="http://www.devtf.cn/?tag=ios" class="tag-cloud-link tag-link-7 tag-link-position-8" style="font-size:17.262626262626pt" aria-label="iOS (40个项目)">iOS</a>
+<a href="http://www.devtf.cn/?tag=jcenter" class="tag-cloud-link tag-link-24 tag-link-position-9" style="font-size:8pt" aria-label="Jcenter (1个项目)">Jcenter</a>
+<a href="http://www.devtf.cn/?tag=kotlin" class="tag-cloud-link tag-link-19 tag-link-position-10" style="font-size:10.828282828283pt" aria-label="kotlin (4个项目)">kotlin</a>
+<a href="http://www.devtf.cn/?tag=mvp" class="tag-cloud-link tag-link-13 tag-link-position-11" style="font-size:11.393939393939pt" aria-label="MVP (5个项目)">MVP</a>
+<a href="http://www.devtf.cn/?tag=mvvm" class="tag-cloud-link tag-link-33 tag-link-position-12" style="font-size:8pt" aria-label="MVVM (1个项目)">MVVM</a>
+<a href="http://www.devtf.cn/?tag=okhttp" class="tag-cloud-link tag-link-41 tag-link-position-13" style="font-size:8pt" aria-label="okhttp (1个项目)">okhttp</a>
+<a href="http://www.devtf.cn/?tag=rxjava" class="tag-cloud-link tag-link-12 tag-link-position-14" style="font-size:14.575757575758pt" aria-label="RxJava (16个项目)">RxJava</a>
+<a href="http://www.devtf.cn/?tag=swift" class="tag-cloud-link tag-link-18 tag-link-position-15" style="font-size:14.787878787879pt" aria-label="Swift (17个项目)">Swift</a>
+<a href="http://www.devtf.cn/?tag=tdd" class="tag-cloud-link tag-link-34 tag-link-position-16" style="font-size:8pt" aria-label="TDD (1个项目)">TDD</a>
+<a href="http://www.devtf.cn/?tag=%e5%86%85%e5%ad%98%e4%bc%98%e5%8c%96" class="tag-cloud-link tag-link-39 tag-link-position-17" style="font-size:8pt" aria-label="内存优化 (1个项目)">内存优化</a>
+<a href="http://www.devtf.cn/?tag=%e5%8a%a8%e7%94%bb" class="tag-cloud-link tag-link-42 tag-link-position-18" style="font-size:8pt" aria-label="动画 (1个项目)">动画</a>
+<a href="http://www.devtf.cn/?tag=%e5%8d%95%e5%85%83%e6%b5%8b%e8%af%95" class="tag-cloud-link tag-link-29 tag-link-position-19" style="font-size:12.59595959596pt" aria-label="单元测试 (8个项目)">单元测试</a>
+<a href="http://www.devtf.cn/?tag=%e5%91%a8%e6%8a%a5" class="tag-cloud-link tag-link-16 tag-link-position-20" style="font-size:16.555555555556pt" aria-label="周报 (31个项目)">周报</a>
+<a href="http://www.devtf.cn/?tag=%e5%93%8d%e5%ba%94%e5%bc%8f%e7%bc%96%e7%a8%8b" class="tag-cloud-link tag-link-17 tag-link-position-21" style="font-size:12.949494949495pt" aria-label="响应式编程 (9个项目)">响应式编程</a>
+<a href="http://www.devtf.cn/?tag=%e6%80%a7%e8%83%bd" class="tag-cloud-link tag-link-21 tag-link-position-22" style="font-size:9.2727272727273pt" aria-label="性能 (2个项目)">性能</a>
+<a href="http://www.devtf.cn/?tag=%e6%80%a7%e8%83%bd%e4%bc%98%e5%8c%96" class="tag-cloud-link tag-link-38 tag-link-position-23" style="font-size:9.2727272727273pt" aria-label="性能优化 (2个项目)">性能优化</a>
+<a href="http://www.devtf.cn/?tag=%e6%8d%a2%e8%82%a4" class="tag-cloud-link tag-link-35 tag-link-position-24" style="font-size:10.121212121212pt" aria-label="换肤 (3个项目)">换肤</a>
+<a href="http://www.devtf.cn/?tag=%e6%95%b0%e6%8d%ae%e7%bb%91%e5%ae%9a" class="tag-cloud-link tag-link-37 tag-link-position-25" style="font-size:10.121212121212pt" aria-label="数据绑定 (3个项目)">数据绑定</a>
+<a href="http://www.devtf.cn/?tag=%e6%9e%b6%e6%9e%84" class="tag-cloud-link tag-link-10 tag-link-position-26" style="font-size:13.232323232323pt" aria-label="架构 (10个项目)">架构</a>
+<a href="http://www.devtf.cn/?tag=%e6%b5%8b%e8%af%95" class="tag-cloud-link tag-link-6 tag-link-position-27" style="font-size:12.242424242424pt" aria-label="测试 (7个项目)">测试</a>
+<a href="http://www.devtf.cn/?tag=%e7%a7%81%e6%9c%89maven" class="tag-cloud-link tag-link-36 tag-link-position-28" style="font-size:8pt" aria-label="私有Maven (1个项目)">私有Maven</a>
+<a href="http://www.devtf.cn/?tag=%e7%bd%91%e7%bb%9c" class="tag-cloud-link tag-link-31 tag-link-position-29" style="font-size:8pt" aria-label="网络 (1个项目)">网络</a>
+<a href="http://www.devtf.cn/?tag=%e8%ae%be%e8%ae%a1%e5%8e%9f%e5%88%99" class="tag-cloud-link tag-link-23 tag-link-position-30" style="font-size:10.121212121212pt" aria-label="设计原则 (3个项目)">设计原则</a>
+<a href="http://www.devtf.cn/?tag=%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f" class="tag-cloud-link tag-link-11 tag-link-position-31" style="font-size:10.121212121212pt" aria-label="设计模式 (3个项目)">设计模式</a>
+<a href="http://www.devtf.cn/?tag=%e9%87%8d%e6%9e%84" class="tag-cloud-link tag-link-27 tag-link-position-32" style="font-size:8pt" aria-label="重构 (1个项目)">重构</a>
+<a href="http://www.devtf.cn/?tag=%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1" class="tag-cloud-link tag-link-22 tag-link-position-33" style="font-size:10.121212121212pt" aria-label="面向对象 (3个项目)">面向对象</a></div>
+</aside></aside>
+</div>
+</div>
+<footer>
+<div class="blog-footer">
+<div class="container">
+<p class="site-credits">&copy; 2017 - <a href="http://frenchtastic.eu">Design by Frenchtastic.eu</a></p>
+<p class="back-to-top"><a href="#"><i class="fa fa-angle-up"></i> Back to top<a></p>
+</div>
+</div>
+</footer>
+</div>
+<script type='text/javascript'>var SlimStatParams={"ajaxurl":"http:\/\/www.devtf.cn\/wp-admin\/admin-ajax.php","extensions_to_track":"pdf,doc,xls,zip","outbound_classes_rel_href_to_not_track":"noslimstat,ab-item","ci":"YToyOntzOjEyOiJjb250ZW50X3R5cGUiO3M6ODoiY2F0ZWdvcnkiO3M6ODoiY2F0ZWdvcnkiO3M6MToiMiI7fQ==.d97087ee87be4db0ccc09aeb1dd28245"};</script>
+<script type='text/javascript' src='http://cdn.jsdelivr.net/wp/wp-slimstat/tags/4.6.7/wp-slimstat.min.js'></script>
+<script type='text/javascript'>!function(a,b){"use strict";function c(){if(!e){e=!0;var a,c,d,f,g=-1!==navigator.appVersion.indexOf("MSIE 10"),h=!!navigator.userAgent.match(/Trident.*rv:11\./),i=b.querySelectorAll("iframe.wp-embedded-content");for(c=0;c<i.length;c++){if(d=i[c],!d.getAttribute("data-secret"))f=Math.random().toString(36).substr(2,10),d.src+="#?secret="+f,d.setAttribute("data-secret",f);if(g||h)a=d.cloneNode(!0),a.removeAttribute("security"),d.parentNode.replaceChild(a,d)}}}var d=!1,e=!1;if(b.querySelector)if(a.addEventListener)d=!0;if(a.wp=a.wp||{},!a.wp.receiveEmbedMessage)if(a.wp.receiveEmbedMessage=function(c){var d=c.data;if(d.secret||d.message||d.value)if(!/[^a-zA-Z0-9]/.test(d.secret)){var e,f,g,h,i,j=b.querySelectorAll('iframe[data-secret="'+d.secret+'"]'),k=b.querySelectorAll('blockquote[data-secret="'+d.secret+'"]');for(e=0;e<k.length;e++)k[e].style.display="none";for(e=0;e<j.length;e++)if(f=j[e],c.source===f.contentWindow){if(f.removeAttribute("style"),"height"===d.message){if(g=parseInt(d.value,10),g>1e3)g=1e3;else if(~~g<200)g=200;f.height=g}if("link"===d.message)if(h=b.createElement("a"),i=b.createElement("a"),h.href=f.getAttribute("src"),i.href=d.value,i.host===h.host)if(b.activeElement===f)a.top.location.href=d.value}else;}},d)a.addEventListener("message",a.wp.receiveEmbedMessage,!1),b.addEventListener("DOMContentLoaded",c,!1),a.addEventListener("load",c,!1)}(window,document);</script>
+<script type="text/javascript">var duoshuoQuery={"short_name":"devtf","sso":{"login":"http:\/\/www.devtf.cn\/wp-login.php?action=duoshuo_login","logout":"http:\/\/www.devtf.cn\/wp-login.php?action=logout&_wpnonce=c8943d5a86"},"theme":"bluebox","stylePatch":"wordpress\/Coeur"};duoshuoQuery.sso.login+='&redirect_to='+encodeURIComponent(window.location.href);duoshuoQuery.sso.logout+='&redirect_to='+encodeURIComponent(window.location.href);</script>
+<script type="text/javascript" src="http://static.duoshuo.com/embed.js" charset="UTF-8" async="async"></script>
+</body>
+</html>

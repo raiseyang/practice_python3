@@ -39,8 +39,11 @@ content = file.read()  # 读取文件
 # print(content)
 content = file.readlines()  # 读取每行
 
-baconFile = open('a.txt', 'w')  # 写模式打开文件
-baconFile.write('\nHello world!\n')
+# baconFile = open('a.txt', 'w')  # 写模式打开文件
+# baconFile.write('\nHello world!\n')
+with open('a.txt','w') as file:
+    file.write('\nHello world!\n')
+
 baconFile = open('a.txt', 'r')  # 读文件
 print(baconFile.read())
 

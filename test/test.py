@@ -1,21 +1,9 @@
-tableData = [['apples', 'oranges', 'cherries', 'banana'],
-['Alice', 'Bob', 'Carol', 'David'],
-['dogs', 'cats', 'moose', 'goose']]
+import requests
 
-colWidths = [0] * len(tableData)
-for i,array in enumerate(tableData):
-    colWidths[i] = 0
-    for word in array:
-        if len(word) >colWidths[i]:
-            colWidths[i] = len(word)
+if __name__ == "__main__":
+    # print(len(proxy.proxy_list()))
+    # resp = requests.post('http://localhost:8080/users/test')
+    # print(resp.text)
 
-for j in range(0,4):
-    for i,array in enumerate(tableData):
-        if i == 0:
-            print(array[j].rjust(colWidths[i]),end=' ')
-        else:
-            print(array[j].ljust(colWidths[i]),end=' ')
-
-    print("")
-
-print(colWidths)
+    with open("D:/python22.txt", "a") as file:
+        file.write("w\n")

@@ -9,7 +9,10 @@ def re_get_actor(html):
     :param html:
     :return:
     """
-    a = re.search(r'<p>◎主　　演　(.*)</p>\n(<p>　　　　　　(.*)</p>\n)*', html).group(0)
+    try:
+        a = re.search(r'<p>◎主　　演　(.*)</p>\n(<p>　　　　　　(.*)</p>\n)*', html).group(0)
+    except:
+        return ''
     line_list = a.split("\n")
     actors = [re.match(r'<p>(◎主\u3000\u3000演)?[\u3000]+(.*)</p>', tag_p).group(2) for tag_p in line_list if
               re.match(r'<p>(◎主\u3000\u3000演)?[\u3000]+(.*)</p>', tag_p)]
@@ -22,7 +25,10 @@ def re_get_brief(html):
     :param html:
     :return:
     """
-    match = re.search(r'<p>◎简　　介(.*)</p>\n(<p>　　(.*)</p>\n)*', html).group(0)
+    try:
+        match = re.search(r'<p>◎简　　介(.*)</p>\n(<p>　　(.*)</p>\n)*', html).group(0)
+    except:
+        return ''
     line_list = match.split("\n")
     # print(line_list)
     brief = ''
@@ -77,4 +83,4 @@ def re_get_xunlei_url(html):
     xl_urls = []
     for tag_a in soup.find_all('a'):
         xl_urls.append(tag_a.text)
-    return xl_urls
+    return str(xl_urls)
