@@ -1,23 +1,18 @@
+import json
+
 import requests
 
-url = "http://fota4.adups.cn/ota/open/checkVersion"
+url = "http://iotdown.mayitek.com/111147962/2222347/5a18be4d-da18-4971-a739-d9c99dbefe95.zip"
 
 headers = {
     'cache-control': "no-cache",
+    'Range': "bytes=212485881-",
     'postman-token': "0e7d23a0-066d-90e5-20b8-d1cfcd667e47"
 }
 
-payload = {
-    "mid": "12345postman",
-    "version": "DW028_MT2502C_V1.0_HITN_170607_20170607-1625",
-    "oem": "szkct",
-    "models": "DW028_HITN_B",
-    "token": "d07cde9de1af60b8dc799912f7f73f67",
-    "platform": "MTK2502",
-    "deviceType": "health",
-    "sdkVerCode": "1",
-}
+response = requests.request("GET", url, headers=headers)
+print(response.headers['Content-Length'])
 
-response = requests.request("POST", url, data=payload, headers=headers)
+print('end')
 
 print(response.text)
