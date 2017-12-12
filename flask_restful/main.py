@@ -7,6 +7,8 @@ api = Api(app)
 
 class HelloWorld(Resource):
     def get(self):
+
+
         return {'hello': 'world'}
 
     def post(self, product_id, device_id):
@@ -27,7 +29,7 @@ class HelloWorld(Resource):
         }
 
 
-api.add_resource(HelloWorld, '/<string:product_id>/<string:device_id>')
+api.add_resource(HelloWorld, '/')
 
 if __name__ == '__main__':
     app.run(debug=True)

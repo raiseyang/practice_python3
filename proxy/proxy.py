@@ -68,3 +68,6 @@ def proxy_list():
 #     ip_temp = tds[2].contents[0] + "\t" + tds[3].contents[0] + "\n"
 #     # print tds[2].contents[0]+"\t"+tds[3].contents[0]
 #     f.write(ip_temp)
+if __name__ == "__main__":
+    list = proxy_list()
+    print(list(list))

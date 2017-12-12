@@ -1,0 +1,403 @@
+<ul class="summary">
+    <li class="chapter " data-level="1.1" data-path="./">
+        <a href="./">Introduction</a>
+    </li>
+    <li class="chapter " data-level="1.2" data-path="xie_zai_qian_mian.html">
+        <a href="xie_zai_qian_mian.html">写在前面</a>
+    </li>
+    <li class="chapter " data-level="1.3" data-path="guan_yu_ben_shu.html">
+        <a href="guan_yu_ben_shu.html">关于本书</a>
+    </li>
+    <li class="chapter " data-level="1.4" data-path="zhe_ben_shu_shi_he_ni_ma_ff1f.html">
+        <a href="zhe_ben_shu_shi_he_ni_ma_ff1f.html">这本书适合你吗？</a>
+    </li>
+    <li class="chapter " data-level="1.5" data-path="guan_yu_zuo_zhe.html">
+        <a href="guan_yu_zuo_zhe.html">关于作者</a>
+    </li>
+    <li class="chapter " data-level="1.6" data-path="jie_shao.html">
+        <a href="jie_shao.html">介绍</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.6.1" data-path="shi_yao_shi_kotlin.html">
+                <a href="shi_yao_shi_kotlin.html">什么是Kotlin？</a>
+            </li>
+            <li class="chapter " data-level="1.6.2" data-path="wo_men_tong_guo_kotlin_de_dao_shi_yao.html">
+                <a href="wo_men_tong_guo_kotlin_de_dao_shi_yao.html">我们通过Kotlin得到什么</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.7" data-path="zhun_bei_gong_zuo.html">
+        <a href="zhun_bei_gong_zuo.html">准备工作</a>
+        <ul class="articles">
+            <li class="chapter active" data-level="1.7.1" data-path="android_studio.html">
+                <a href="android_studio.html">Android Studio</a>
+            </li>
+            <li class="chapter " data-level="1.7.2" data-path="an_zhuang_kotlin_cha_jian.html">
+                <a href="an_zhuang_kotlin_cha_jian.html">安装Kotlin插件</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.8" data-path="chuang_jian_yi_ge_xin_de_xiang_mu.html">
+        <a href="chuang_jian_yi_ge_xin_de_xiang_mu.html">创建一个新的项目</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.8.1" data-path="zai_android_studio_zhong_chuang_jian_yi_ge_xiang_mu.html">
+                <a href="zai_android_studio_zhong_chuang_jian_yi_ge_xiang_mu.html">在Android Studio中创建一个项目</a>
+            </li>
+            <li class="chapter " data-level="1.8.2" data-path="pei_zhi_gradle.html">
+                <a href="pei_zhi_gradle.html">配置Gradle</a>
+            </li>
+            <li class="chapter " data-level="1.8.3" data-path="ba_mainactivity_zhuan_huan_cheng_kotlin_dai_ma.html">
+                <a href="ba_mainactivity_zhuan_huan_cheng_kotlin_dai_ma.html">把MainActivity转换成Kotlin代码</a>
+            </li>
+            <li class="chapter " data-level="1.8.4" data-path="ce_shi_shi_fou_yi_qie_jiu_xu.html">
+                <a href="ce_shi_shi_fou_yi_qie_jiu_xu.html">测试是否一切就绪</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.9" data-path="lei_he_han_shu.html">
+        <a href="lei_he_han_shu.html">类和函数</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.9.1" data-path="zen_yao_ding_yi_yi_ge_lei.html">
+                <a href="zen_yao_ding_yi_yi_ge_lei.html">怎么定义一个类</a>
+            </li>
+            <li class="chapter " data-level="1.9.2" data-path="lei_ji_cheng.html">
+                <a href="lei_ji_cheng.html">类继承</a>
+            </li>
+            <li class="chapter " data-level="1.9.3" data-path="han_shu.html">
+                <a href="han_shu.html">函数</a>
+            </li>
+            <li class="chapter " data-level="1.9.4" data-path="gou_zao_fang_fa_he_han_shu_can_shu.html">
+                <a href="gou_zao_fang_fa_he_han_shu_can_shu.html">构造方法和函数参数</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.10" data-path="bian_xie_ni_de_di_yi_ge_lei.html">
+        <a href="bian_xie_ni_de_di_yi_ge_lei.html">编写你的第一个类</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.10.1" data-path="chuang_jian_yi_ge_layout.html">
+                <a href="chuang_jian_yi_ge_layout.html">创建一个layout</a>
+            </li>
+            <li class="chapter " data-level="1.10.2" data-path="the_recycler_adapter.html">
+                <a href="the_recycler_adapter.html">The Recycler Adapter</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.11" data-path="bian_liang_he_shu_xing.html">
+        <a href="bian_liang_he_shu_xing.html">变量和属性</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.11.1" data-path="ji_ben_lei_xing.html">
+                <a href="ji_ben_lei_xing.html">基本类型</a>
+            </li>
+            <li class="chapter " data-level="1.11.2" data-path="bian_liang.html">
+                <a href="bian_liang.html">变量</a>
+            </li>
+            <li class="chapter " data-level="1.11.3" data-path="shu_xing.html">
+                <a href="shu_xing.html">属性</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.12" >
+        <span>Anko和扩展的函数</span>
+        <ul class="articles">
+            <li class="chapter " data-level="1.12.1" data-path="ankoshi_shi_yao_ff1f.html">
+                <a href="ankoshi_shi_yao_ff1f.html">Anko是什么？</a>
+            </li>
+            <li class="chapter " data-level="1.12.2" data-path="kai_shi_shi_yong_anko.html">
+                <a href="kai_shi_shi_yong_anko.html">开始使用Anko</a>
+            </li>
+            <li class="chapter " data-level="1.12.3" data-path="kuo_zhan_han_shu.html">
+                <a href="kuo_zhan_han_shu.html">扩展函数</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.13" >
+        <span>从API中获取数据</span>
+        <ul class="articles">
+            <li class="chapter " data-level="1.13.1" data-path="zhi_xing_yi_ge_qing_qiu.html">
+                <a href="zhi_xing_yi_ge_qing_qiu.html">执行一个请求</a>
+            </li>
+            <li class="chapter " data-level="1.13.2" data-path="zai_zhu_xian_cheng_yi_wai_zhi_xing_qing_qiu.html">
+                <a href="zai_zhu_xian_cheng_yi_wai_zhi_xing_qing_qiu.html">在主线程以外执行请求</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.14" data-path="shu_ju_lei.html">
+        <a href="shu_ju_lei.html">数据类</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.14.1" data-path="e_wai_de_han_shu.html">
+                <a href="e_wai_de_han_shu.html">额外的函数</a>
+            </li>
+            <li class="chapter " data-level="1.14.2" data-path="fu_zhi_yi_ge_shu_ju_lei.html">
+                <a href="fu_zhi_yi_ge_shu_ju_lei.html">复制一个数据类</a>
+            </li>
+            <li class="chapter " data-level="1.14.3" data-path="ying_she_dui_xiang_dao_bian_liang_zhong.html">
+                <a href="ying_she_dui_xiang_dao_bian_liang_zhong.html">映射对象到变量中</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.15" >
+        <span>解析数据</span>
+        <ul class="articles">
+            <li class="chapter " data-level="1.15.1" data-path="zhuan_huan_json_dao_shu_ju_lei.html">
+                <a href="zhuan_huan_json_dao_shu_ju_lei.html">转换json到数据类</a>
+            </li>
+            <li class="chapter " data-level="1.15.2" data-path="gou_jiandomain_ceng.html">
+                <a href="gou_jiandomain_ceng.html">构建domain层</a>
+            </li>
+            <li class="chapter " data-level="1.15.3" data-path="zaiui_zhong_hui_zhi_shu_ju.html">
+                <a href="zaiui_zhong_hui_zhi_shu_ju.html">在UI中绘制数据</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.16" data-path="cao_zuo_fu_zhong_zai.html">
+        <a href="cao_zuo_fu_zhong_zai.html">操作符重载</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.16.1" data-path="cao_zuo_fu_biao.html">
+                <a href="cao_zuo_fu_biao.html">操作符表</a>
+            </li>
+            <li class="chapter " data-level="1.16.2" data-path="li_zi.html">
+                <a href="li_zi.html">例子</a>
+            </li>
+            <li class="chapter " data-level="1.16.3" data-path="kuo_zhan_han_shu_zhong_de_cao_zuo_fu.html">
+                <a href="kuo_zhan_han_shu_zhong_de_cao_zuo_fu.html">扩展函数中的操作符</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.17" data-path="shi_forecast_list_ke_dian_ji.html">
+        <a href="shi_forecast_list_ke_dian_ji.html">使Forecast list可点击</a>
+    </li>
+    <li class="chapter " data-level="1.18" data-path="lambdas.html">
+        <a href="lambdas.html">Lambdas</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.18.1" data-path="jian_hua_setonclicklistener.html">
+                <a href="jian_hua_setonclicklistener.html">简化setOnClickListener()</a>
+            </li>
+            <li class="chapter " data-level="1.18.2" data-path="forecastlistadapterde_click_listener.html">
+                <a href="forecastlistadapterde_click_listener.html">ForecastListAdapter的click listener</a>
+            </li>
+            <li class="chapter " data-level="1.18.3" data-path="kuo_zhan_yu_yan.html">
+                <a href="kuo_zhan_yu_yan.html">扩展语言</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.19" data-path="ke_jian_xing_xiu_shi_fu.html">
+        <a href="ke_jian_xing_xiu_shi_fu.html">可见性修饰符</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.19.1" data-path="xiu_shi_fu.html">
+                <a href="xiu_shi_fu.html">修饰符</a>
+            </li>
+            <li class="chapter " data-level="1.19.2" data-path="gou_zao_qi.html">
+                <a href="gou_zao_qi.html">构造器</a>
+            </li>
+            <li class="chapter " data-level="1.19.3" data-path="run_se_wo_men_de_dai_ma.html">
+                <a href="run_se_wo_men_de_dai_ma.html">润色我们的代码</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.20" data-path="kotlin_android_extensions.html">
+        <a href="kotlin_android_extensions.html">Kotlin Android Extensions</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.20.1" data-path="zen_yaoqu_shi_yong_kotlinandroid_extensions.html">
+                <a href="zen_yaoqu_shi_yong_kotlinandroid_extensions.html">怎么去使用Kotlin Android Extensions</a>
+            </li>
+            <li class="chapter " data-level="1.20.2" data-path="zhong_gou_wo_men_de_dai_ma.html">
+                <a href="zhong_gou_wo_men_de_dai_ma.html">重构我们的代码</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.21" data-path="applicationdan_li_hua_he_shu_xing_de_delegated.html">
+        <a href="applicationdan_li_hua_he_shu_xing_de_delegated.html">Application单例化和属性的Delegated</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.21.1" data-path="applicatondan_li_hua.html">
+                <a href="applicatondan_li_hua.html">Applicaton单例化</a>
+            </li>
+            <li class="chapter " data-level="1.21.2" data-path="wei_tuo_shu_xing.html">
+                <a href="wei_tuo_shu_xing.html">委托属性</a>
+            </li>
+            <li class="chapter " data-level="1.21.3" data-path="biao_zhun_wei_tuo.html">
+                <a href="biao_zhun_wei_tuo.html">标准委托</a>
+            </li>
+            <li class="chapter " data-level="1.21.4" data-path="zen_yao_qu_chuang_jian_yi_ge_zi_ding_yi_de_wei_tuo.html">
+                <a href="zen_yao_qu_chuang_jian_yi_ge_zi_ding_yi_de_wei_tuo.html">怎么去创建一个自定义的委托</a>
+            </li>
+            <li class="chapter " data-level="1.21.5" data-path="zhong_xin_shixian_application_dan_li_hua.html">
+                <a href="zhong_xin_shixian_application_dan_li_hua.html">重新实现Application单例化</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.22" data-path="chuang_jian_yi_ge_sqliteopenhelper.html">
+        <a href="chuang_jian_yi_ge_sqliteopenhelper.html">创建一个SQLiteOpenHelper</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.22.1" data-path="managedsqliteopenhelper.html">
+                <a href="managedsqliteopenhelper.html">ManagedSqliteOpenHelper</a>
+            </li>
+            <li class="chapter " data-level="1.22.2" data-path="ding_yi_biao.html">
+                <a href="ding_yi_biao.html">定义表</a>
+            </li>
+            <li class="chapter " data-level="1.22.3" data-path="shi_xian_sqliteopenhelper.html">
+                <a href="shi_xian_sqliteopenhelper.html">实现SqliteOpenHelper</a>
+            </li>
+            <li class="chapter " data-level="1.22.4" data-path="yi_lai_zhu_ru.html">
+                <a href="yi_lai_zhu_ru.html">依赖注入</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.23" data-path="ji_he_he_han_shu_cao_zuo_fu.html">
+        <a href="ji_he_he_han_shu_cao_zuo_fu.html">集合和函数操作符</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.23.1" data-path="zong_shu_cao_zuo_fu.html">
+                <a href="zong_shu_cao_zuo_fu.html">总数操作符</a>
+            </li>
+            <li class="chapter " data-level="1.23.2" data-path="guo_lv_cao_zuo_fu.html">
+                <a href="guo_lv_cao_zuo_fu.html">过滤操作符</a>
+            </li>
+            <li class="chapter " data-level="1.23.3" data-path="ying_she_cao_zuo_fu.html">
+                <a href="ying_she_cao_zuo_fu.html">映射操作符</a>
+            </li>
+            <li class="chapter " data-level="1.23.4" data-path="yuan_su_cao_zuo_fu.html">
+                <a href="yuan_su_cao_zuo_fu.html">元素操作符</a>
+            </li>
+            <li class="chapter " data-level="1.23.5" data-path="sheng_chan_cao_zuo_fu.html">
+                <a href="sheng_chan_cao_zuo_fu.html">生产操作符</a>
+            </li>
+            <li class="chapter " data-level="1.23.6" data-path="shun_xu_cao_zuo_fu.html">
+                <a href="shun_xu_cao_zuo_fu.html">顺序操作符</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.24" data-path="cong_shu_ju_ku_zhong_bao_cun_huo_cha_xun_shu_ju.html">
+        <a href="cong_shu_ju_ku_zhong_bao_cun_huo_cha_xun_shu_ju.html">从数据库中保存或查询数据</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.24.1" data-path="chuang_jian_shu_ju_ku_model_lei.html">
+                <a href="chuang_jian_shu_ju_ku_model_lei.html">创建数据库model类</a>
+            </li>
+            <li class="chapter " data-level="1.24.2" data-path="xie_ru_he_cha_xun_shu_ju_ku.html">
+                <a href="xie_ru_he_cha_xun_shu_ju_ku.html">写入和查询数据库</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.25" data-path="kotlinzhong_de_null_an_quan.html">
+        <a href="kotlinzhong_de_null_an_quan.html">Kotlin中的null安全</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.25.1" data-path="ke_null_lei_xing_zen_yao_gong_zuo.html">
+                <a href="ke_null_lei_xing_zen_yao_gong_zuo.html">可null类型怎么工作</a>
+            </li>
+            <li class="chapter " data-level="1.25.2" data-path="ke_null_xing_he_java_ku.html">
+                <a href="ke_null_xing_he_java_ku.html">可null性和Java库</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.26" data-path="chuang_jian_ye_wu_luo_ji_lai_fang_wen_shu_ju.html">
+        <a href="chuang_jian_ye_wu_luo_ji_lai_fang_wen_shu_ju.html">创建业务逻辑来访问数据</a>
+    </li>
+    <li class="chapter " data-level="1.27" data-path="flow_controlhe_ranges.html">
+        <a href="flow_controlhe_ranges.html">Flow control和ranges</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.27.1" data-path="ifbiao_da_shi.html">
+                <a href="ifbiao_da_shi.html">If表达式</a>
+            </li>
+            <li class="chapter " data-level="1.27.2" data-path="whenbiao_da_shi.html">
+                <a href="whenbiao_da_shi.html">When表达式</a>
+            </li>
+            <li class="chapter " data-level="1.27.3" data-path="forxun_huan.html">
+                <a href="forxun_huan.html">For循环</a>
+            </li>
+            <li class="chapter " data-level="1.27.4" data-path="whilehe_do__while_xun_huan.html">
+                <a href="whilehe_do__while_xun_huan.html">While和do/while循环</a>
+            </li>
+            <li class="chapter " data-level="1.27.5" data-path="ranges.html">
+                <a href="ranges.html">Ranges</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.28" data-path="chuang_jian_yi_ge_xiang_qing_jie_mian.html">
+        <a href="chuang_jian_yi_ge_xiang_qing_jie_mian.html">创建一个详情界面</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.28.1" data-path="zhun_bei_qing_qiu.html">
+                <a href="zhun_bei_qing_qiu.html">准备请求</a>
+            </li>
+            <li class="chapter " data-level="1.28.2" data-path="ti_gong_yige_xin_de_activity.html">
+                <a href="ti_gong_yige_xin_de_activity.html">提供一个新的activity</a>
+            </li>
+            <li class="chapter " data-level="1.28.3" data-path="qi_dong_yige_activity__reified_han_shu.html">
+                <a href="qi_dong_yige_activity__reified_han_shu.html">启动一个activity：reified函数</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.29" >
+        <span>接口和委托</span>
+        <ul class="articles">
+            <li class="chapter " data-level="1.29.1" data-path="jie_kou.html">
+                <a href="jie_kou.html">接口</a>
+            </li>
+            <li class="chapter " data-level="1.29.2" data-path="wei_tuo.html">
+                <a href="wei_tuo.html">委托</a>
+            </li>
+            <li class="chapter " data-level="1.29.3" data-path="zai_wo_men_de_app_zhong_shi_xian_yi_ge_li_zi.html">
+                <a href="zai_wo_men_de_app_zhong_shi_xian_yi_ge_li_zi.html">在我们的App中实现一个例子</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.30" data-path="fan_xing.html">
+        <a href="fan_xing.html">泛型</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.30.1" data-path="ji_chu.html">
+                <a href="ji_chu.html">基础</a>
+            </li>
+            <li class="chapter " data-level="1.30.2" data-path="bian_ti.html">
+                <a href="bian_ti.html">变体</a>
+            </li>
+            <li class="chapter " data-level="1.30.3" data-path="fan_xing_li_zi.html">
+                <a href="fan_xing_li_zi.html">泛型例子</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.31" data-path="she_zhi_jie_mian.html">
+        <a href="she_zhi_jie_mian.html">设置界面</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.31.1" data-path="chuang_jian_yi_ge_she_zhi_activity.html">
+                <a href="chuang_jian_yi_ge_she_zhi_activity.html">创建一个设置activity</a>
+            </li>
+            <li class="chapter " data-level="1.31.2" data-path="fang_wen_shared_preferences.html">
+                <a href="fang_wen_shared_preferences.html">访问Shared Preferences</a>
+            </li>
+            <li class="chapter " data-level="1.31.3" data-path="fan_xing_preference_wei_tuo.html">
+                <a href="fan_xing_preference_wei_tuo.html">泛型preference委托</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.32" data-path="ce_shi_ni_de_app.html">
+        <a href="ce_shi_ni_de_app.html">测试你的App</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.32.1" data-path="unit_testing.html">
+                <a href="unit_testing.html">Unit testing</a>
+            </li>
+            <li class="chapter " data-level="1.32.2" data-path="instrumentation_tests.html">
+                <a href="instrumentation_tests.html">Instrumentation tests</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.33" data-path="qi_ta_de_gai_nian.html">
+        <a href="qi_ta_de_gai_nian.html">其它的概念</a>
+        <ul class="articles">
+            <li class="chapter " data-level="1.33.1" data-path="nei_bu_lei.html">
+                <a href="nei_bu_lei.html">内部类</a>
+            </li>
+            <li class="chapter " data-level="1.33.2" data-path="mei_ju.html">
+                <a href="mei_ju.html">枚举</a>
+            </li>
+            <li class="chapter " data-level="1.33.3" data-path="mi_feng_lei.html">
+                <a href="mi_feng_lei.html">密封（Sealed）类</a>
+            </li>
+            <li class="chapter " data-level="1.33.4" data-path="yi_chang_ff08_exceptions.html">
+                <a href="yi_chang_ff08_exceptions.html">异常（Exceptions）</a>
+            </li>
+        </ul>
+    </li>
+    <li class="chapter " data-level="1.34" data-path="jie_wei.html">
+        <a href="jie_wei.html">结尾</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">Published with GitBook</a>
+    </li>
+</ul>
