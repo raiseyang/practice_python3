@@ -1,0 +1,116 @@
+--Kotlin in action--
+1.1%%%Introduction%%%./
+1.2%%%写在前面%%%xie_zai_qian_mian.html
+1.3%%%关于本书%%%guan_yu_ben_shu.html
+1.4%%%这本书适合你吗？%%%zhe_ben_shu_shi_he_ni_ma_ff1f.html
+1.5%%%关于作者%%%guan_yu_zuo_zhe.html
+1.6%%%介绍%%%jie_shao.html
+1.6.1%%%什么是Kotlin？%%%shi_yao_shi_kotlin.html
+1.6.2%%%我们通过Kotlin得到什么%%%wo_men_tong_guo_kotlin_de_dao_shi_yao.html
+1.7%%%准备工作%%%zhun_bei_gong_zuo.html
+1.7.1%%%Android Studio%%%android_studio.html
+1.7.2%%%安装Kotlin插件%%%an_zhuang_kotlin_cha_jian.html
+1.8%%%创建一个新的项目%%%chuang_jian_yi_ge_xin_de_xiang_mu.html
+1.8.1%%%在Android Studio中创建一个项目%%%zai_android_studio_zhong_chuang_jian_yi_ge_xiang_mu.html
+1.8.2%%%配置Gradle%%%pei_zhi_gradle.html
+1.8.3%%%把MainActivity转换成Kotlin代码%%%ba_mainactivity_zhuan_huan_cheng_kotlin_dai_ma.html
+1.8.4%%%测试是否一切就绪%%%ce_shi_shi_fou_yi_qie_jiu_xu.html
+1.9%%%类和函数%%%lei_he_han_shu.html
+1.9.1%%%怎么定义一个类%%%zen_yao_ding_yi_yi_ge_lei.html
+1.9.2%%%类继承%%%lei_ji_cheng.html
+1.9.3%%%函数%%%han_shu.html
+1.9.4%%%构造方法和函数参数%%%gou_zao_fang_fa_he_han_shu_can_shu.html
+1.10%%%编写你的第一个类%%%bian_xie_ni_de_di_yi_ge_lei.html
+1.10.1%%%创建一个layout%%%chuang_jian_yi_ge_layout.html
+1.10.2%%%The Recycler Adapter%%%the_recycler_adapter.html
+1.11%%%变量和属性%%%bian_liang_he_shu_xing.html
+1.11.1%%%基本类型%%%ji_ben_lei_xing.html
+1.11.2%%%变量%%%bian_liang.html
+1.11.3%%%属性%%%shu_xing.html
+1.12%%%Anko是什么？%%%ankoshi_shi_yao_ff1f.html
+1.12.1%%%Anko是什么？%%%ankoshi_shi_yao_ff1f.html
+1.12.2%%%开始使用Anko%%%kai_shi_shi_yong_anko.html
+1.12.3%%%扩展函数%%%kuo_zhan_han_shu.html
+1.13%%%执行一个请求%%%zhi_xing_yi_ge_qing_qiu.html
+1.13.1%%%执行一个请求%%%zhi_xing_yi_ge_qing_qiu.html
+1.13.2%%%在主线程以外执行请求%%%zai_zhu_xian_cheng_yi_wai_zhi_xing_qing_qiu.html
+1.14%%%数据类%%%shu_ju_lei.html
+1.14.1%%%额外的函数%%%e_wai_de_han_shu.html
+1.14.2%%%复制一个数据类%%%fu_zhi_yi_ge_shu_ju_lei.html
+1.14.3%%%映射对象到变量中%%%ying_she_dui_xiang_dao_bian_liang_zhong.html
+1.15%%%转换json到数据类%%%zhuan_huan_json_dao_shu_ju_lei.html
+1.15.1%%%转换json到数据类%%%zhuan_huan_json_dao_shu_ju_lei.html
+1.15.2%%%构建domain层%%%gou_jiandomain_ceng.html
+1.15.3%%%在UI中绘制数据%%%zaiui_zhong_hui_zhi_shu_ju.html
+1.16%%%操作符重载%%%cao_zuo_fu_zhong_zai.html
+1.16.1%%%操作符表%%%cao_zuo_fu_biao.html
+1.16.2%%%例子%%%li_zi.html
+1.16.3%%%扩展函数中的操作符%%%kuo_zhan_han_shu_zhong_de_cao_zuo_fu.html
+1.17%%%使Forecast list可点击%%%shi_forecast_list_ke_dian_ji.html
+1.18%%%Lambdas%%%lambdas.html
+1.18.1%%%简化setOnClickListener()%%%jian_hua_setonclicklistener.html
+1.18.2%%%ForecastListAdapter的click listener%%%forecastlistadapterde_click_listener.html
+1.18.3%%%扩展语言%%%kuo_zhan_yu_yan.html
+1.19%%%可见性修饰符%%%ke_jian_xing_xiu_shi_fu.html
+1.19.1%%%修饰符%%%xiu_shi_fu.html
+1.19.2%%%构造器%%%gou_zao_qi.html
+1.19.3%%%润色我们的代码%%%run_se_wo_men_de_dai_ma.html
+1.20%%%Kotlin Android Extensions%%%kotlin_android_extensions.html
+1.20.1%%%怎么去使用Kotlin Android Extensions%%%zen_yaoqu_shi_yong_kotlinandroid_extensions.html
+1.20.2%%%重构我们的代码%%%zhong_gou_wo_men_de_dai_ma.html
+1.21%%%Application单例化和属性的Delegated%%%applicationdan_li_hua_he_shu_xing_de_delegated.html
+1.21.1%%%Applicaton单例化%%%applicatondan_li_hua.html
+1.21.2%%%委托属性%%%wei_tuo_shu_xing.html
+1.21.3%%%标准委托%%%biao_zhun_wei_tuo.html
+1.21.4%%%怎么去创建一个自定义的委托%%%zen_yao_qu_chuang_jian_yi_ge_zi_ding_yi_de_wei_tuo.html
+1.21.5%%%重新实现Application单例化%%%zhong_xin_shixian_application_dan_li_hua.html
+1.22%%%创建一个SQLiteOpenHelper%%%chuang_jian_yi_ge_sqliteopenhelper.html
+1.22.1%%%ManagedSqliteOpenHelper%%%managedsqliteopenhelper.html
+1.22.2%%%定义表%%%ding_yi_biao.html
+1.22.3%%%实现SqliteOpenHelper%%%shi_xian_sqliteopenhelper.html
+1.22.4%%%依赖注入%%%yi_lai_zhu_ru.html
+1.23%%%集合和函数操作符%%%ji_he_he_han_shu_cao_zuo_fu.html
+1.23.1%%%总数操作符%%%zong_shu_cao_zuo_fu.html
+1.23.2%%%过滤操作符%%%guo_lv_cao_zuo_fu.html
+1.23.3%%%映射操作符%%%ying_she_cao_zuo_fu.html
+1.23.4%%%元素操作符%%%yuan_su_cao_zuo_fu.html
+1.23.5%%%生产操作符%%%sheng_chan_cao_zuo_fu.html
+1.23.6%%%顺序操作符%%%shun_xu_cao_zuo_fu.html
+1.24%%%从数据库中保存或查询数据%%%cong_shu_ju_ku_zhong_bao_cun_huo_cha_xun_shu_ju.html
+1.24.1%%%创建数据库model类%%%chuang_jian_shu_ju_ku_model_lei.html
+1.24.2%%%写入和查询数据库%%%xie_ru_he_cha_xun_shu_ju_ku.html
+1.25%%%Kotlin中的null安全%%%kotlinzhong_de_null_an_quan.html
+1.25.1%%%可null类型怎么工作%%%ke_null_lei_xing_zen_yao_gong_zuo.html
+1.25.2%%%可null性和Java库%%%ke_null_xing_he_java_ku.html
+1.26%%%创建业务逻辑来访问数据%%%chuang_jian_ye_wu_luo_ji_lai_fang_wen_shu_ju.html
+1.27%%%Flow control和ranges%%%flow_controlhe_ranges.html
+1.27.1%%%If表达式%%%ifbiao_da_shi.html
+1.27.2%%%When表达式%%%whenbiao_da_shi.html
+1.27.3%%%For循环%%%forxun_huan.html
+1.27.4%%%While和do/while循环%%%whilehe_do__while_xun_huan.html
+1.27.5%%%Ranges%%%ranges.html
+1.28%%%创建一个详情界面%%%chuang_jian_yi_ge_xiang_qing_jie_mian.html
+1.28.1%%%准备请求%%%zhun_bei_qing_qiu.html
+1.28.2%%%提供一个新的activity%%%ti_gong_yige_xin_de_activity.html
+1.28.3%%%启动一个activity：reified函数%%%qi_dong_yige_activity__reified_han_shu.html
+1.29%%%接口%%%jie_kou.html
+1.29.1%%%接口%%%jie_kou.html
+1.29.2%%%委托%%%wei_tuo.html
+1.29.3%%%在我们的App中实现一个例子%%%zai_wo_men_de_app_zhong_shi_xian_yi_ge_li_zi.html
+1.30%%%泛型%%%fan_xing.html
+1.30.1%%%基础%%%ji_chu.html
+1.30.2%%%变体%%%bian_ti.html
+1.30.3%%%泛型例子%%%fan_xing_li_zi.html
+1.31%%%设置界面%%%she_zhi_jie_mian.html
+1.31.1%%%创建一个设置activity%%%chuang_jian_yi_ge_she_zhi_activity.html
+1.31.2%%%访问Shared Preferences%%%fang_wen_shared_preferences.html
+1.31.3%%%泛型preference委托%%%fan_xing_preference_wei_tuo.html
+1.32%%%测试你的App%%%ce_shi_ni_de_app.html
+1.32.1%%%Unit testing%%%unit_testing.html
+1.32.2%%%Instrumentation tests%%%instrumentation_tests.html
+1.33%%%其它的概念%%%qi_ta_de_gai_nian.html
+1.33.1%%%内部类%%%nei_bu_lei.html
+1.33.2%%%枚举%%%mei_ju.html
+1.33.3%%%密封（Sealed）类%%%mi_feng_lei.html
+1.33.4%%%异常（Exceptions）%%%yi_chang_ff08_exceptions.html
+1.34%%%结尾%%%jie_wei.html

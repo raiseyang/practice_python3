@@ -13,10 +13,10 @@ class Article(object):
         return 'title={},chapter={},href={}'.format(self.title, self.chapter, self.href)
 
 
-def start():
+def start(nav, book_name):
     string = ''
 
-    with open('nav.xml', 'rb') as file:
+    with open(nav, 'rb') as file:
         string = file.read()
 
     soup = BeautifulSoup(string, 'lxml')
@@ -32,11 +32,12 @@ def start():
         list_article.append(article)
     # print(list(list_article))
 
-
-
-    for article in list_article:
-        print(article.chapter)
+    with open('chapters', 'w', encoding='utf8')as file:
+        file.write('--{}--\n'.format(book_name))
+        for article in list_article:
+            file.write(article.chapter + "%%%" + article.title + "%%%" + article.href)
+            file.write('\n')
 
 
 if __name__ == '__main__':
-    start()
+    start('nav.xml', 'Kotlin in action')

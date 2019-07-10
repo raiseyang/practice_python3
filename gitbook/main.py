@@ -4,17 +4,17 @@ from bs4 import BeautifulSoup
 # url = 'http://localhost:4000/yi_chang_ff08_exceptions.html'
 import  os
 
-url = 'https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/content/'
-book_name = 'springBoot'
+url = 'https://leohxj.gitbooks.io/a-programmer-prepares/content/index.html'
+book_name = '程序员的自我修养'
 
 # url = 'https://marcorosso.gitbooks.io/oma-device-management/'
 
 
 def start():
-    resp = requests.get(url)
+    resp = requests.get(url=url)
     resp.encoding = "utf8"
     # resp.encoding = "ANSI"
-    # print(resp.text)
+    print(resp.text)
     soup = BeautifulSoup(resp.text, "lxml")
     nav = soup.find('nav')
     a_nav_list = nav.find_all('a')
@@ -27,7 +27,7 @@ def start():
         resp = requests.get(link)
         resp.encoding = 'utf8'
 
-        # save_file(name.replace('/','__'), resp.text)
+        save_file(name.replace('/','__'), resp.text)
         print('loop', name)
 
     print(resp.encoding, 'end.')
