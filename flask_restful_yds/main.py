@@ -12,7 +12,7 @@ class HelloWorld(Resource):
         return '{"status":1000,"msg":"success","data":{"packageName":["com.uc.infoflow","me.ele"]}}'
 
 
-api.add_resource(HelloWorld, '/<string:count>')
+api.add_resource(HelloWorld, '/<int:count>')
 
 if __name__ == '__main__':
-    app.run(debug=True,post='50001',host='127.0.0.1')
+    app.run(debug=True,host='127.0.0.1')

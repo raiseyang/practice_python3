@@ -2,17 +2,17 @@ import json
 
 import requests
 
-url = "http://iotdown.mayitek.com/111147962/2222347/5a18be4d-da18-4971-a739-d9c99dbefe95.zip"
 
-headers = {
-    'cache-control': "no-cache",
-    'Range': "bytes=212485881-",
-    'postman-token': "0e7d23a0-066d-90e5-20b8-d1cfcd667e47"
-}
+def login():
+    # url = "http://172.18.6.74:5000/course/allCourseList"
+    # url = "http://127.0.0.1:5000/3"
+    post_data = {
+        "username": "123",
+        "password": "abc"
+    }
+    response = requests.request("POST", url, data=post_data)
+    print(response.text)
 
-response = requests.request("GET", url, headers=headers)
-print(response.headers['Content-Length'])
 
-print('end')
-
-print(response.text)
+if __name__ == "__main__":
+    login()
