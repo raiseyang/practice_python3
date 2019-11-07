@@ -11,6 +11,9 @@ import os
 path = os.path.join('C:', 'windows')
 print(path)  # C:windows
 
+# 创建文件夹
+os.mkdir(path)
+
 print(os.getcwd())  # 当前工作目录
 # os.chdir('C:')  # 切换工作目录
 print(os.getcwd())  # C:\
