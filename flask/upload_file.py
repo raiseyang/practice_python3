@@ -30,7 +30,7 @@ def allowed_file(filename):
 
 @app.route('/download_file', methods=['GET', 'POST'])
 def download_file():
-    return send_file(m_file_out['path'],)
+    return send_file(m_file_out['path'], attachment_filename="out.xls", as_attachment=True)
 
 
 @app.route('/uploaded_file', methods=['GET', 'POST'])
