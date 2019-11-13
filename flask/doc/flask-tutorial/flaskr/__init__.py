@@ -3,6 +3,7 @@ import os
 from flask import Flask
 from . import db
 
+
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
@@ -28,9 +29,16 @@ def create_app(test_config=None):
     @app.route('/hello')
     def hello():
         return 'Hello, World!'
+
+    # 初始化数据库
     db.init_app(app)
 
+    # 注册蓝图
+    from . import auth
+    app.register_blueprint(auth.bp)
+
     return app
+
 
 if __name__ == '__main__':
     create_app().run()
