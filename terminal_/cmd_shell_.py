@@ -11,7 +11,6 @@ def exec_cmd(cmd_str):
     :param cmd_str:
     :return:
     """
-    print(list(cmd_str))
     p = subprocess.Popen(cmd_str, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
                          stderr=subprocess.PIPE, shell=is_windows)
     p.wait()
