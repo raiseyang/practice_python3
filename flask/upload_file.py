@@ -95,6 +95,10 @@ def upload_file():
     <!doctype html>
     <title>Upload new File</title>
     <h1>Upload new File</h1>
+    <ul>
+        <li>MID列的判断标识为'ID'
+        <li>激活码列的判断标识为'注册码'
+    </ul>
     <form method=post enctype=multipart/form-data>
       <input type=file name=file>
       <input type=submit value=Upload>
@@ -103,4 +107,4 @@ def upload_file():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='172.18.6.62')
+    app.run(debug=True, host='172.18.6.62', port=5001)

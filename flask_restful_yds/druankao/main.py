@@ -91,5 +91,5 @@ def test():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True, host="172.18.6.74",port=1231)
     # test()
