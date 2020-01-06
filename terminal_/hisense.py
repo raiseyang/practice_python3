@@ -26,13 +26,13 @@ def next_page():
 
 def three_hundred_in_20_min():
     for i in range(0, 300):
-        time.sleep(random.randint(0, 10) / 10 * 2)
+        time.sleep(random.randint(0, 10) / 10 * 3)
         if random.randint(0, 10) == 5:
             pre_page()
         else:
             next_page()
 
-        time.sleep(random.randint(0, 10) / 10 * 2)
+        time.sleep(random.randint(0, 10) / 10 * 3)
 
 
 def three_hundred_in_10_min():

@@ -30,7 +30,9 @@ def allowed_file(filename):
 
 @app.route('/download_file', methods=['GET', 'POST'])
 def download_file():
-    return send_file(m_file_out['path'], attachment_filename="out.xls", as_attachment=True)
+    out_file = m_file_out['path']
+    print("下载的文件路径：{}".format(out_file))
+    return send_file(out_file, attachment_filename=os.path.basename(out_file), as_attachment=True)
 
 
 @app.route('/uploaded_file', methods=['GET', 'POST'])
@@ -46,6 +48,7 @@ def uploaded_file():
         out_file_path = excel_write_.write(os.path.join(app.config['UPLOAD_FOLDER'], file_name),
                                            m_active_code_list)
         m_file_out['path'] = out_file_path
+        print("目标文件：{}".format(m_file_out['path']))
         return '''
         <!doctype html>
         <title>Uploaded File Success</title>
@@ -86,7 +89,7 @@ def upload_file():
                 code = cmd_shell_.exec_cmd(cmd.format(id).split(' '))
                 m_active_code_list.append(str(code[0], encoding="utf8"))
             # 赋值给全局变量
-            msg = "共生成{}个激活码".format(len(m_active_code_list))
+            msg = "共生成{}个注册码".format(len(m_active_code_list))
             print(msg)
             return redirect(url_for('uploaded_file',
                                     filename=filename,

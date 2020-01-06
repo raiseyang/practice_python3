@@ -35,8 +35,10 @@ def write(file_name, active_code_list):
             print("i={},len={},col={}".format(i, len(active_code_list), code_col))
             sheet.write(i + 1, code_col, active_code_list[i])
 
-        print("所有激活码写入完成")
+        print("所有注册码写入完成")
         wb.save(os.path.join(os.path.dirname(file_name), os.path.basename(file_name) + ".active"))
+    else:
+        print("未找到:注册码")
 
     return os.path.join(os.path.dirname(file_name), os.path.basename(file_name) + ".active")
 
