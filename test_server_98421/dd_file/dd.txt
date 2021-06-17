@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<media xmlns="http://www.openmobilealliance.org/xmlns/dd">
+	<DDversion>1.0</DDversion>
+	<name>Firmware update by yangdongsheng</name>
+	<type>application/octet-stream</type>
+	<description>This is dongsheng's dd file.</description>
+	<objectURI>http://192.168.50.134:5000/download_package</objectURI>
+	<size>${package_size}</size>
+	<installParam>priorityflag=priority</installParam>
+</media>
