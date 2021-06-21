@@ -1,9 +1,9 @@
 <SyncML>
-		<SyncHdr>
+	<SyncHdr>
 		<VerDTD>1.2</VerDTD>
 		<VerProto>DM/1.2</VerProto>
 		<SessionID>${session_id}</SessionID>
-		<MsgID>1</MsgID>
+		<MsgID>${msg_id}</MsgID>
 		<Target>
 			<LocURI>${loc_uri}</LocURI>
 			<LocName>${loc_name}</LocName>
@@ -16,20 +16,33 @@
 	<SyncBody>
 		<Status>
 			<CmdID>1</CmdID>
-			<MsgRef>2</MsgRef>
+			<MsgRef>${msg_id}</MsgRef>
 			<CmdRef>0</CmdRef>
 			<Cmd>SyncHdr</Cmd>
-			<TargetRef>http://120.24.96.224:8080/webApi/oma.aspx</TargetRef>
-			<SourceRef>IMEI:861139020041602</SourceRef>
+			<Data>212</Data>
+		</Status>
+		<Status>
+			<CmdID>2</CmdID>
+			<MsgRef>${msg_id}</MsgRef>
+			<CmdRef>2</CmdRef>
+			<Cmd>Alert</Cmd>
 			<Data>200</Data>
 		</Status>
-        <Status>
-			<CmdID>2</CmdID>
-			<MsgRef>2</MsgRef>
+		<Status>
+			<CmdID>3</CmdID>
+			<MsgRef>${msg_id}</MsgRef>
+			<CmdRef>3</CmdRef>
+			<Cmd>Alert</Cmd>
+			<Data>200</Data>
+		</Status>
+		<Status>
+			<CmdID>4</CmdID>
+			<MsgRef>${msg_id}</MsgRef>
 			<CmdRef>4</CmdRef>
 			<Cmd>Replace</Cmd>
 			<Data>200</Data>
 		</Status>
+		${get_tag_temp}
 		<Final/>
 	</SyncBody>
 </SyncML>

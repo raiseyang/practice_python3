@@ -4,14 +4,17 @@ import re
 
 from flask import Flask, request, redirect, url_for, send_file, Response
 
+from test_server_98421 import diag_util, apn_util
+
 app = Flask(__name__)
 
 field_json = {
     "pkg_num": 1,
     "dd_file_path": ".\\dd_file\\dd.txt",
     "update_file_path": ".\\update_file\\mock_package.zip",
-    "test_fumo": False
-    # "test_fumo": True
+    # "test_type": "fumo",
+    "test_type": "apn_get",
+    # "test_type": "diag_get",
 }
 
 
@@ -57,10 +60,18 @@ def dongsheng_dm():
     # http://127.0.0.1:5000/hello
     # 获取post请求的数据
     data = request.get_data()
+    print("req={}".format(str(data, 'utf-8')))
     session_id = re_get_session_id(str(data))
     (loc_uri, loc_name) = re_get_client_uri(str(data))
     msg_id = re_get_msg_id(str(data))
-    print("msg_id={},req={}".format(str(msg_id), str(data).encode("utf-8")))
+
+    # 打印出获取节点时数据结果是405的节点
+    if field_json['test_type'] == 'diag_get':
+        cmd_405_list = diag_util.re_find_405_cmd(str(data, 'utf-8'))
+        print("uri_405_list=" + str(cmd_405_list))
+    if field_json['test_type'] == 'apn_get':
+        cmd_405_list = apn_util.re_find_405_cmd(str(data, 'utf-8'))
+        print("uri_405_list=" + str(cmd_405_list))
 
     # 下载升级上报
     if "org.openmobilealliance.dm.firmwareupdate.downloadandupdate" in str(data):
@@ -69,44 +80,40 @@ def dongsheng_dm():
                    .replace('${msg_id}', msg_id) \
             , "200", response
     # 检测版本
-    if "org.openmobilealliance.dm.firmwareupdate.userrequest" in str(data):
-        if msg_id == "1":
-            # if field_json["pkg_num"] == 1:
-            #     field_json["pkg_num"] = 3
-            return open('server_pkgs/pkg2.txt').read().replace('${session_id}', session_id) \
-                       .replace('${loc_uri}', loc_uri).replace('${loc_name}', loc_name) \
-                       .replace('${msg_id}', msg_id) \
-                , "200", response
-    if msg_id == "2":
-        # if field_json["pkg_num"] == 3:
-        #     field_json["pkg_num"] = 5
-        if field_json['test_fumo'] :
-            return open('server_pkgs/pkg4.txt').read().replace('${session_id}', session_id) \
+    if msg_id == "1":
+        # if field_json["pkg_num"] == 1:
+        #     field_json["pkg_num"] = 3
+        return open('server_pkgs/{}/pkg2.txt'.format(field_json['test_type'])).read().replace('${session_id}',
+                                                                                              session_id) \
                    .replace('${loc_uri}', loc_uri).replace('${loc_name}', loc_name) \
                    .replace('${msg_id}', msg_id) \
             , "200", response
-        else :
-            return open('server_pkgs/pkg4_info.txt').read().replace('${session_id}', session_id) \
-                       .replace('${loc_uri}', loc_uri).replace('${loc_name}', loc_name) \
-                       .replace('${msg_id}', msg_id) \
-                , "200", response
+    if msg_id == "2":
+        resp_data = open('server_pkgs/{}/pkg4.txt'.format(field_json['test_type'])).read().replace('${session_id}',
+                                                                                                   session_id) \
+            .replace('${loc_uri}', loc_uri).replace('${loc_name}', loc_name) \
+            .replace('${msg_id}', msg_id)
+
+        if field_json['test_type'] == 'diag_get':
+            resp_data = resp_data.replace('${get_tag_temp}', diag_util.getTagList(5))
+        elif field_json['test_type'] == 'apn_get':
+            resp_data = resp_data.replace('${get_tag_temp}', apn_util.getTagList(5))
+        return resp_data, "200", response
+
     if msg_id == "3":
         # if field_json["pkg_num"] == 5:
         #     field_json["pkg_num"] = 7
-        if field_json['test_fumo'] :
-            return open('server_pkgs/pkg6.txt').read().replace('${session_id}', session_id) \
+        return open('server_pkgs/{}/pkg6.txt'.format(field_json['test_type'])).read() \
+                   .replace('${session_id}', session_id) \
                    .replace('${loc_uri}', loc_uri).replace('${loc_name}', loc_name) \
                    .replace('${msg_id}', msg_id) \
             , "200", response
-        else:
-            return open('server_pkgs/pkg6_info.txt').read().replace('${session_id}', session_id) \
-                       .replace('${loc_uri}', loc_uri).replace('${loc_name}', loc_name) \
-                       .replace('${msg_id}', msg_id) \
-                , "200", response
+
     if msg_id == "4":
         # if field_json["pkg_num"] == 7:
         #     field_json["pkg_num"] = 99
-        return open('server_pkgs/pkg8.txt').read().replace('${session_id}', session_id) \
+        return open('server_pkgs/{}/pkg8.txt'.format(field_json['test_type'])).read().replace('${session_id}',
+                                                                                              session_id) \
                    .replace('${loc_uri}', loc_uri).replace('${loc_name}', loc_name) \
                    .replace('${msg_id}', msg_id) \
             , "200", response
