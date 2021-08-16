@@ -42,15 +42,15 @@
 			<Cmd>Replace</Cmd>
 			<Data>200</Data>
 		</Status>
-
-<Exec>
-			<CmdID>2</CmdID>
+        <Replace>
+			<CmdID>5</CmdID>
 			<Item>
 				<Target>
-					<LocURI>./ManagedObjects/ConnMO/LTE/APN/3/Setting/Operations/Disable</LocURI>
+					<LocURI>./ManagedObjects/FUMO/DownloadAndUpdate/PkgURL</LocURI>
 				</Target>
+				<Data>http://192.168.50.134:5000/download_dd_file</Data>
 			</Item>
-</Exec>
+		</Replace>
 		<Final/>
 	</SyncBody>
 </SyncML>

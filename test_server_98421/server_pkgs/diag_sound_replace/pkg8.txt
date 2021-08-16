@@ -1,0 +1,26 @@
+<SyncML>
+		<SyncHdr>
+		<VerDTD>1.2</VerDTD>
+		<VerProto>DM/1.2</VerProto>
+		<SessionID>${session_id}</SessionID>
+		<MsgID>${msg_id}</MsgID>
+		<Target>
+			<LocURI>${loc_uri}</LocURI>
+			<LocName>${loc_name}</LocName>
+		</Target>
+		<Source>
+			<LocURI>http://192.168.50.134:5000/dongsheng/dm</LocURI>
+			<LocName>dongsheng_ds</LocName>
+		</Source>
+	</SyncHdr>
+	<SyncBody>
+		<Status>
+			<CmdID>1</CmdID>
+			<MsgRef>${msg_id}</MsgRef>
+			<CmdRef>0</CmdRef>
+			<Cmd>SyncHdr</Cmd>
+			<Data>200</Data>
+		</Status>
+		<Final/>
+	</SyncBody>
+</SyncML>

@@ -42,33 +42,51 @@
 			<Cmd>Replace</Cmd>
 			<Data>200</Data>
 		</Status>
-		    <Replace>
-      <CmdID>5</CmdID>
+	 <Replace>
+      <CmdID>187</CmdID>
       <Item>
         <Target>
-          <LocURI>./ManagedObjects/FUMO/Ext/Severity</LocURI>
+          <LocURI>./ManagedObjects/DiagMon/Sound/Volumes/Ringtone</LocURI>
         </Target>
-        <Data>3</Data>
+        <Data>75</Data>
       </Item>
     </Replace>
-        <Replace>
-      <CmdID>7</CmdID>
+    <Replace>
+      <CmdID>188</CmdID>
       <Item>
         <Target>
-          <LocURI>./ManagedObjects/FUMO/Ext/NI/WifiOnly</LocURI>
+          <LocURI>./ManagedObjects/DiagMon/Sound/Volumes/Notifications</LocURI>
         </Target>
-        <Data>true</Data>
+        <Data>25</Data>
       </Item>
     </Replace>
-		<Replace>
-			<CmdID>8</CmdID>
-			<Item>
-				<Target>
-					<LocURI>./ManagedObjects/FUMO/DownloadAndUpdate/PkgURL</LocURI>
-				</Target>
-				<Data>http://192.168.50.134:5000/download_dd_file</Data>
-			</Item>
-		</Replace>
+    <Replace>
+      <CmdID>189</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./ManagedObjects/DiagMon/Sound/Volumes/Alarms</LocURI>
+        </Target>
+        <Data>50</Data>
+      </Item>
+    </Replace>
+    <Replace>
+      <CmdID>190</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./ManagedObjects/DiagMon/Sound/Volumes/Audio_Video_Media</LocURI>
+        </Target>
+        <Data>50</Data>
+      </Item>
+    </Replace>
+    <Replace>
+      <CmdID>191</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./ManagedObjects/DiagMon/Sound/Volumes/Bluetooth</LocURI>
+        </Target>
+        <Data>50</Data>
+      </Item>
+    </Replace>
 		<Final/>
 	</SyncBody>
 </SyncML>
