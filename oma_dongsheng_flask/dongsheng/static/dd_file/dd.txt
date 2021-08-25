@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<media xmlns="http://www.openmobilealliance.org/xmlns/dd">
+	<DDversion>1.0</DDversion>
+	<name>Firmware update by yangdongsheng</name>
+	<type>application/octet-stream</type>
+	<description>This is dongsheng's dd file.</description>
+	<objectURI>http://192.168.50.134:5000/download_package</objectURI>
+	<size>${package_size}</size>
+	<RequiredInstallParameter>${package_size}</RequiredInstallParameter>
+	<PreDownloadMessage>
+    &lt;p&gt;&lt;img src=&quot;http://192.168.50.134:5000/static/SecurityUpdate_img.png&quot;/&gt;&lt;/p&gt;
+  </PreDownloadMessage>
+  <PostDownloadMessage>
+    a: &lt;a href=&quot;https://www.verizonwireless.com&quot;&gt;Hyperlink
+    to another web page&lt;/a&gt; &lt;br&gt; b: &lt;b&gt;Bold Text&lt;/b&gt;&lt;br&gt;
+    br: LINE BREAK &lt;br&gt; em: &lt;em&gt;Emphasis&lt;/em&gt;&lt;br&gt; i:
+    &lt;i&gt;italic text&lt;/i&gt; &lt;br&gt; ul &amp; li: Unordered bulleted
+    list&lt;ul&gt;&lt;li&gt;List 1&lt;/li&gt;&lt;li&gt;List 2&lt;/li&gt;&lt;/ul&gt;
+    p: Paragraph &lt;p style=&quot;color:red; font-size:200%&quot;&gt; color:red;
+    font-size:200% PARAGRAPH&lt;/p&gt; span: Inline Element &lt;span style=&quot;color:blue;
+    font-size:50%&quot;&gt; color:blue; font-size:50% SPAN&lt;/span&gt;&lt;br&gt;
+    small: &lt;small&gt;smaller Text&lt;/small&gt; &lt;br&gt; strong: &lt;strong&gt;Strong
+    Text&lt;/strong&gt;&lt;br&gt; sub &amp; sup: DOWN &lt;sub&gt;sub&lt;/sub&gt;
+    VS UP&lt;sup&gt;super&lt;/sup&gt;&lt;br&gt; trademark: &lt;p&gt;This is
+    my tradmark&trade; company&lt;/p&gt; copyright: &lt;p&gt;This page is copyright&copy;
+    so verify it shows correctly&lt;/p&gt;
+  </PostDownloadMessage>
+  <PostUpdateMessage>
+    &lt;p&gt;&lt;img src=&quot;http://192.168.50.134:5000/static/SecurityUpdate_img.png&quot;/&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;System Update X&lt;/b&gt;&lt;/p&gt; &lt;p&gt;This update
+    will restart your MODEL. During the update you won&apos;t be able to make
+    or receive 911 calls for XX minutes.&lt;/p&gt;
+  </PostUpdateMessage>
+  <PreDownloadURL>
+    https://verizonwireless.com
+  </PreDownloadURL>
+  <PostDownloadURL>
+    https://verizonwireless.com
+  </PostDownloadURL>
+  <PostUpdateURL>
+    https://verizonwireless.com
+  </PostUpdateURL>
+</media>
