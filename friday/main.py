@@ -1,11 +1,13 @@
+import os
+import sys
 from time import time
 
 import requests
 import hmac
 import hashlib
 
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), "..")))
 from friday import config
-
 
 def get_time_stamp():
     return str(int(time()))

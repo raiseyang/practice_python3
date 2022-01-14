@@ -8,6 +8,7 @@ import sys
 
 from fumo_test import config
 
+
 header = {
     'Cache-Control': 'private',
     'Connection': 'close',
