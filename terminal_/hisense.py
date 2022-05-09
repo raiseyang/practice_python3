@@ -3,8 +3,8 @@ import time
 
 from datetime import date
 
-from terminal_ import cmd_shell_
-
+#from terminal_ import cmd_shell_
+import cmd_shell_
 
 def pre_page():
     """

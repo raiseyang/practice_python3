@@ -1,0 +1,168 @@
+<resources>
+    <string name="title_activity_demo">DemoActivity</string>
+    <string name="tips_content_default">
+        <Data><![CDATA[ <div style="font-size:18px;color:#4c4c4c">   <p>  小贴士:</p>
+                                <p>▪   请点击检测版本进行软件更新，以使用最新最稳定的软件功能。</p>
+                                <p>▪   软件更新期间您将无法使用车辆，请确保车辆处于静止状态。</p>
+                                </div> ]]> </Data>
+    </string>
+    <string name="btn_check_version">检测版本</string>
+    <string name="btn_checking">检测版本中...</string>
+    <string name="btn_download_start">下载</string>
+    <string name="btn_download_pause">暂停下载</string>
+    <string name="btn_download_resume">恢复下载</string>
+    <string name="btn_download_cancel">取消下载</string>
+    <string name="btn_upgrade_now">立即安装</string>
+    <string name="btn_upgrade_appoint">预约安装</string>
+    <string name="btn_find_new_version">发现新版本</string>
+    <string name="btn_download_now">立即下载</string>
+    <string name="btn_nolonger_remind">不再提醒</string>
+    <string name="btn_sure">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_return">返回</string>
+    <string name="btn_transitory_not_install">暂不安装</string>
+    <string name="btn_install_now">立即安装</string>
+    <string name="btn_upgrade_later_in_time">%s秒后开始更新</string>
+    <string name="btn_install_delay">推迟</string>
+    <string name="str_not_install">您确定要退出安装？</string>
+    <string name="str_net_error">失败原因：网络异常</string>
+    <string name="str_net_error_download">网络异常，请稍后再试！</string>
+    <string name="str_cancel_task_download">下载失败，服务器取消了本次更新！</string>
+    <string name="str_download_space_not_enough">下载失败，存储空间不足！</string>
+    <string name="str_download_md5_invalid">下载失败，更新包不可信，请重新下载！</string>
+    <string name="str_net_only_wifi_download">仅wifi下载，请切换运营商网络</string>
+    <string name="str_net_is_4G_download">当前为非WIFI环境，是否使用流量下载</string>
+    <string name="str_net_only_4G_download">仅流量下载，请切换为4G网络</string>
+    <string name="str_unknown_error_download">下载失败，失败原因：%s</string>
+    <string name="str_current_is_latest_version">暂无新版本</string>
+    <string name="str_getting_current_info_error">获取本地信息失败</string>
+    <string name="str_getting_info_error">获取失败</string>
+    <string name="str_download_list">下载列表</string>
+    <string name="str_latest_version">系统更新</string>
+    <string name="str_latest_version_description">新版本说明</string>
+    <string name="check_error_not_register">失败原因：车辆未注册</string>
+    <string name="check_error_net">网络异常，请稍后再试！</string>
+
+    <string name="condition_check_error">条件检测失败</string>
+    <string name="condition_check_error_cause">"失败原因：车辆条件不满足"</string>
+    <string name="condition_title">请调整车辆状态，以满足安装条件</string>
+    <string name="condition_check_success">车辆安装条件满足，即将为您安装...</string>
+    <string name="condition_check_error_tips">请按红色提示语调整车辆安装条件</string>
+    <string name="upgrade_title">正在安装中，请勿进行其他操作</string>
+    <string name="upgrade_ecu_title">正在为您安装%s...</string>
+    <string name="upgrade_rollback_ecu_title">%s安装失败，正在进行旧版本回退...</string>
+    <string name="upgrade_ecu_error">%s新版本安装失败</string>
+    <string name="upgrade_ecu_retry">%s新版本重试安装中...</string>
+    <string name="upgrade_rollback_ecu_success">%s新版本安装失败，旧版本回退成功</string>
+    <string name="upgrade_rollback_ecu_success1">%s新版本安装成功，旧版本回退成功</string>
+    <string name="upgrade_rollback_ecu_error">%s新版本安装失败，旧版本回退失败</string>
+    <string name="upgrade_rollback_ecu_error1">%s新版本安装成功，旧版本回退失败</string>
+    <string name="upgrade_error_title">安装失败，请去附近4S店重新安装或拨打4006665969咨询</string>
+    <string name="notification_title">提示</string>
+    <string name="notification_check_error_title">检测失败</string>
+
+    <string name="condition_acc_off_desc">电源模式为OFF</string>
+    <string-array name="condition_desc_array">
+        <item>电源%s</item>
+        <item></item>
+        <item>电量大于%s</item>
+        <item></item>
+        <item>手刹%s</item>
+        <item>档位为%s档</item>
+        <item></item>
+        <item></item>
+        <item>车辆%s</item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="condition_desc_warn_array">
+        <item>请将电源调整至%s</item>
+        <item></item>
+        <item>电量不足%s,请先充电</item>
+        <item></item>
+        <item>请将电子手刹%s</item>
+        <item>请将档位调整至%s档</item>
+        <item></item>
+        <item></item>
+        <item>请确保车辆%s</item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string name="btn_dialog_ok">确定</string>
+    <string name="btn_dialog_cancel">取消</string>
+    <string name="btn_dialog_ok_1">是</string>
+    <string name="btn_dialog_ok_2">继续</string>
+    <string name="btn_dialog_cancel_1">否</string>
+    <string name="dialog_title">提示</string>
+    <string name="btn_dialog_cancel_install">取消安装</string>
+
+    <string name="str_btn_test">测试按钮</string>
+    <string name="str_download_success">下载成功</string>
+    <string name="str_download_error">下载失败</string>
+    <string name="str_verify_package_info">正在检验升级包...</string>
+    <string name="str_verify_upgrade_condition">正在检验安装条件...</string>
+    <string name="str_upgrade_error">安装失败</string>
+    <string name="str_appoint_upgrade">预约时间到达</string>
+    <string name="str_appoint_arrived_is_upgrade">预约时间到达，是否需要安装？</string>
+    <string name="str_appoint_upgrade_error">预约升级失败</string>
+    <string name="str_retry_check_version">请重新检测版本</string>
+    <string name="str_upgrade_success">安装成功</string>
+    <string name="str_upgrade_release_note">更新提示</string>
+    <string name="str_disclaimer">系统升级服务条款</string>
+    <string name="str_agree">同意</string>
+    <string name="str_disagree">拒绝</string>
+    <string name="str_appoint_time">预约时间</string>
+    <string name="str_appoint_time_hint">预约时间不能小于当前时间</string>
+    <string name="str_upgrade_after_thirty_seconds">30秒后立即安装</string>
+    <string name="str_register_failed_check_error">检测失败,车辆未注册!</string>
+    <string name="str_check_error_code">检测失败，错误码：</string>
+    <string name="dialog_msg_download_cancel">正在取消下载...</string>
+
+    <!--安装过程-->
+    <string name="up_cond_title">正在检查车辆状态，状态全部符合后方可进行更新</string>
+    <string name="up_cond_title1">正在校验车辆条件...</string>
+    <string name="up_confirm_title">%s秒后开始更新</string>
+    <string name="up_confirm_msg">更新过程预计耗时%s小时%s分钟，期间车辆无法使用！</string>
+    <string name="up_going_title">正在升级，大约需要%s小时%s分钟，请勿进行其他操作...</string>
+    <string name="up_failed_title">更新失败！请至附近4S店重新安装或拨打400000000咨询！</string>
+    <string name="up_failed_for_car_status">车辆升级条件不满足，请关闭界面后，重新点击安装按钮</string>
+    <string name="up_failed_for_md5_invalid">升级包校验失败，安装包已被删除，请稍后再试</string>
+    <string name="up_verify_title">正在校验更新包及准备更新环境,预计耗时%02d分%02d秒</string>
+    <string name="cancel_task_upgrade">服务器取消了本次升级，系统下次有更新的时候会重新推送给您</string>
+
+    <!--Notification通知栏提示-->
+    <string name="notify_title_new_version">系统更新</string>
+    <string name="notify_msg_new_version">有最新的系统，可以更新。</string>
+    <string name="notify_title_download_success">系统更新</string>
+    <string name="notify_msg_download_success">最新的系统下载完成！</string>
+    <string name="notify_title_appoint_upgrade">更新提醒</string>
+    <string name="notify_msg_appoint_upgrade_arrived">系统更新预约时间已到达！</string>
+    <string name="notify_msg_appoint_upgrade_invalid">系统更新预约时间已失效！</string>
+    <!--Dialog弹窗-->
+    <string name="dialog_title_upgrade_success">升级成功</string>
+    <string name="dialog_msg_upgrade_success">系统更新完成，尽情使用吧！</string>
+    <string name="dialog_upgrade_failed_1">汽车状态不满足升级，请稍后再试！</string>
+    <string name="dialog_upgrade_failed_2">安装错误码：%s\n请去附近4S店重新安装或拨打4006665969咨询！</string>
+    <string name="dialog_upgrade_failed_3">升级包MD5值校验失败</string>
+    <string name="dialog_upgrade_failed_4">升级包版本信息校验失败</string>
+    <string name="dialog_upgrade_failed_5">升级服务断开安装失败</string>
+    <string name="dialog_update_plan_title">安装将在%s后进行</string>
+    <!--Toast提示-->
+    <string name="toast_up_condition_inspect">正在检测升级条件</string>
+    <string name="check_box_disclaimer_agree">我确认已详细阅读以上提示信息，并同意</string>
+
+
+    <string name="disclaimer_anchor">系统更新条款</string>
+    <string name="disclaimer_title">系统更新条款</string>
+    <string name="upgrading">正在升级中</string>
+    <string name="upgrade_success_1">升级成功!</string>
+    <string name="upgrade_failed_1">升级失败!</string>
+    <string name="upgrade_failed_2">请联系爱驰汽车客服：400-820-2555 或 前往附近的爱驰汽车服务站点！</string>
+    <string name="upgrade_failed_3">%s 升级失败</string>
+    <string name="upgrade_version">已是最新版本 %s</string>
+
+</resources>
