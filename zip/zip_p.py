@@ -43,11 +43,15 @@ def exec_delta(cmd):
     return exec_cmd(cmd);
 
 parser = argparse.ArgumentParser("1")
-parser.add_argument("-s","--src", type=str)
-parser.add_argument("-d","--dest", type=str)
+# parser.add_argument("-s","--src", type=str)
+# parser.add_argument("-d","--dest", type=str)
+parser.add_argument("-sv","--srcVer", type=str)
+parser.add_argument("-dv","--destVer", type=str)
 args = parser.parse_args()
-src = args.src
-dest = args.dest
+# src = args.src
+# dest = args.dest
+srcVer = args.srcVer
+destVer = args.destVer
 
 f = {
     "curPath" : ""
@@ -58,6 +62,10 @@ if __name__ == '__main__':
 
     curPath = os.getcwd()
     f['curPath'] = curPath
+
+    src = os.path.join(curPath, "out/target/product/rk3568_r/{sv}.zip".format(sv=srcVer));
+    dest = os.path.join(curPath, "out/target/product/rk3568_r/{dv}.zip".format(dv=destVer));
+
     #解压原版本
     start(srcPath=src,destPath=os.path.join(curPath, src_mock_folder_name));
     #解压目标版本
