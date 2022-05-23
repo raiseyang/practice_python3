@@ -32,11 +32,12 @@ def start(srcPath,destPath):
 
 
 
-url = 'https://iot.onewo.com/jetlinks/file/static'
-files = {'file': open('update_delta.zip', 'rb')}
 def upload(filePath):
+    url = 'https://iot.onewo.com/jetlinks/file/static'
+    delta_path = os.path.join(f['curPath'], 'update_delta.zip')
+    files = {'file': open(delta_path, 'rb')}
     resp = requests.post(url=url, files=files)
-    print(resp.text)
+    print("==send reply{}reply over==".format(resp.text))
 
 
 def exec_delta(cmd):
@@ -60,7 +61,9 @@ f = {
 if __name__ == '__main__':
     print("start.")
 
-    curPath = os.getcwd()
+    cur_file_path = os.path.abspath(__file__)
+    curPath = os.path.dirname(cur_file_path)
+#    curPath = os.getcwd()
     f['curPath'] = curPath
 
     src = os.path.join(curPath, "out/target/product/rk3568_r/{sv}.zip".format(sv=srcVer));
