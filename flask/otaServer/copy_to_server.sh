@@ -1,0 +1,1 @@
+scp main.py dongsheng@10.114.146.12:~/workspaces/otaServer
